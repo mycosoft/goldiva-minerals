@@ -182,6 +182,9 @@
         <button id="moveToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="fixed bottom-8 right-8 bg-gradient-to-br from-gold-400 to-gold-600 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300 hover:from-gold-500 hover:to-gold-700 z-50">
             <i class="fas fa-arrow-up"></i>
         </button>
+        <a href="https://wa.me/256700123456" class="fixed bottom-8 left-8 bg-green-500 text-white w-14 h-14 rounded-full shadow-lg flex items-center justify-center hover:bg-green-600 transition-all z-50">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
     </footer>
 
     <script>

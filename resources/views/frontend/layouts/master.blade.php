@@ -47,6 +47,17 @@
     </style>
 </head>
 <body class="bg-gray-50 font-sans antialiased">
+    <div class="bg-gray-900 py-1.5 border-b border-gold-500/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-center gap-6 text-sm">
+                <span class="text-gray-300"><span class="text-gold-400 font-semibold">Gold:</span> $3,350/oz</span>
+                <span class="text-gray-600">|</span>
+                <span class="text-gray-300"><span class="text-gray-400 font-semibold">Silver:</span> $28.50/oz</span>
+                <span class="text-gray-600">|</span>
+                <span class="text-green-400 font-semibold">Change: +0.50%</span>
+            </div>
+        </div>
+    </div>
     <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md shadow-lg transition-all duration-300" id="navbar">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">

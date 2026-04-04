@@ -44,23 +44,13 @@
         .fade-in { animation: fadeIn 0.8s ease-out forwards; }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
         .hero-bg { background: linear-gradient(135deg, rgba(52, 38, 13, 0.95) 0%, rgba(92, 76, 24, 0.9) 100%), url('https://images.unsplash.com/photo-1610375461246-83df859d849d?w=1920'); background-size: cover; background-position: center; }
-        .section-title { position: relative; display: inline-block; }
-        .section-title::after { content: ''; position: absolute; bottom: -8px; left: 50%; transform: translateX(-50%); width: 60px; height: 3px; background: linear-gradient(90deg, #D4AF37, #FFD700, #D4AF37); border-radius: 2px; }
-        .section-title-dark::after { background: linear-gradient(90deg, #D4AF37, #FFD700, #D4AF37); }
+        .section-title-wrapper { display: flex; flex-direction: column; align-items: center; }
+        .section-title-line { width: 60px; height: 3px; background: linear-gradient(90deg, #D4AF37, #FFD700, #D4AF37); border-radius: 2px; margin-bottom: 16px; }
+        .section-title { font-weight: 800; background: linear-gradient(135deg, #D4AF37 0%, #FFD700 50%, #D4AF37 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .section-title-light { background: linear-gradient(135deg, #D4AF37 0%, #FFD700 50%, #D4AF37 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
     </style>
 </head>
 <body class="bg-gray-50 font-sans antialiased">
-    <div class="bg-gray-900 py-1.5 border-b border-gold-500/30">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-center gap-6 text-sm">
-                <span class="text-gray-300"><span class="text-gold-400 font-semibold">Gold:</span> $3,350/oz</span>
-                <span class="text-gray-600">|</span>
-                <span class="text-gray-300"><span class="text-gray-400 font-semibold">Silver:</span> $28.50/oz</span>
-                <span class="text-gray-600">|</span>
-                <span class="text-green-400 font-semibold">Change: +0.50%</span>
-            </div>
-        </div>
-    </div>
     <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md shadow-lg transition-all duration-300" id="navbar">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">

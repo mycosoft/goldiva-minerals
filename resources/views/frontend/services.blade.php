@@ -14,53 +14,41 @@
 <!-- Services Grid -->
 <section class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4">
-        <div class="grid md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <!-- Buying & Selling -->
-            <div class="text-center">
-                <img src="https://images.unsplash.com/photo-1610375461246-83df859d849d?w=600&h=400&fit=crop" alt="Buying & Selling" class="w-full h-56 object-cover rounded-2xl mb-6 shadow-lg">
-                <div class="w-16 h-16 bg-gold-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <i class="fas fa-coins text-2xl text-gold-600"></i>
+            <div class="bg-white rounded-2xl shadow-lg p-8 text-center">
+                <div class="w-20 h-20 bg-gold-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-coins text-3xl text-gold-600"></i>
                 </div>
-                <h3 class="text-2xl font-bold text-gray-900 mb-4">Buying & Selling</h3>
-                <p class="text-gray-600">
-                    We facilitate the buying and selling of minerals through structured and professional processes. Our established networks ensure fair valuations and secure transactions for all parties involved.
-                </p>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Buying & Selling</h3>
+                <p class="text-gray-600">We facilitate the buying and selling of minerals through structured and professional processes. Our established networks ensure fair valuations and secure transactions for all parties involved.</p>
             </div>
 
             <!-- Smelting -->
-            <div class="text-center">
-                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop" alt="Smelting" class="w-full h-56 object-cover rounded-2xl mb-6 shadow-lg">
-                <div class="w-16 h-16 bg-gold-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <i class="fas fa-fire text-2xl text-gold-600"></i>
+            <div class="bg-white rounded-2xl shadow-lg p-8 text-center">
+                <div class="w-20 h-20 bg-gold-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-fire text-3xl text-gold-600"></i>
                 </div>
-                <h3 class="text-2xl font-bold text-gray-900 mb-4">Smelting</h3>
-                <p class="text-gray-600">
-                    We provide smelting services to process gold and other mineral materials into refined form. Our facilities ensure efficient processing while maintaining the highest standards of safety and quality.
-                </p>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Smelting</h3>
+                <p class="text-gray-600">We provide smelting services to process gold and other mineral materials into refined form. Our facilities ensure efficient processing while maintaining the highest standards of safety and quality.</p>
             </div>
 
             <!-- Documentation -->
-            <div class="text-center">
-                <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&h=400&fit=crop" alt="Documentation" class="w-full h-56 object-cover rounded-2xl mb-6 shadow-lg">
-                <div class="w-16 h-16 bg-gold-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <i class="fas fa-file-alt text-2xl text-gold-600"></i>
+            <div class="bg-white rounded-2xl shadow-lg p-8 text-center">
+                <div class="w-20 h-20 bg-gold-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-file-alt text-3xl text-gold-600"></i>
                 </div>
-                <h3 class="text-2xl font-bold text-gray-900 mb-4">Documentation</h3>
-                <p class="text-gray-600">
-                    We assist with preparation and handling of necessary mineral documentation and compliance requirements. We ensure all paperwork meets regulatory standards.
-                </p>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Documentation</h3>
+                <p class="text-gray-600">We assist with preparation and handling of necessary mineral documentation and compliance requirements. We ensure all paperwork meets regulatory standards.</p>
             </div>
 
             <!-- Mineral Consultancy -->
-            <div class="text-center">
-                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" alt="Mineral Consultancy" class="w-full h-56 object-cover rounded-2xl mb-6 shadow-lg">
-                <div class="w-16 h-16 bg-gold-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <i class="fas fa-chart-line text-2xl text-gold-600"></i>
+            <div class="bg-white rounded-2xl shadow-lg p-8 text-center">
+                <div class="w-20 h-20 bg-gold-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-chart-line text-3xl text-gold-600"></i>
                 </div>
-                <h3 class="text-2xl font-bold text-gray-900 mb-4">Mineral Consultancy</h3>
-                <p class="text-gray-600">
-                    We offer guidance and advisory services in mineral handling, processes, and industry practices. Our experts help you make informed decisions.
-                </p>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Mineral Consultancy</h3>
+                <p class="text-gray-600">We offer guidance and advisory services in mineral handling, processes, and industry practices. Our experts help you make informed decisions.</p>
             </div>
         </div>
     </div>

@@ -127,14 +127,4 @@
     </div>
 </section>
 
-<!-- CTA Section -->
-<section class="py-16 bg-gray-50">
-    <div class="max-w-4xl mx-auto px-4 text-center">
-        <h3 class="text-2xl font-bold text-gray-900 mb-4">Need Immediate Assistance?</h3>
-        <p class="text-gray-600 mb-6">Our team is ready to help with your mineral services needs.</p>
-        <a href="{{ route('frontend.contact') }}" class="btn-gold text-white px-8 py-4 rounded-full font-bold inline-block shadow-lg">
-            Contact Us Directly
-        </a>
-    </div>
-</section>
 @endsection

@@ -20,56 +20,56 @@
                 Goldiva Minerals deals in gold and related mineral materials sourced through trusted channels and partnerships.
             </p>
         </div>
-        <div class="grid md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-3 gap-8">
             <!-- Gold Doré -->
-            <div class="bg-gradient-to-br from-gold-50 to-gold-100 rounded-2xl p-8 text-center card-hover border-2 border-gold-200">
-                <div class="w-24 h-24 bg-gradient-to-br from-gold-400 to-gold-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
-                    <i class="fas fa-coins text-4xl text-white"></i>
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden card-hover border border-gray-100">
+                <img src="https://images.unsplash.com/photo-1610375461246-83df859d849d?w=600&h=400&fit=crop" alt="Gold Doré" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="w-16 h-16 bg-gold-100 rounded-full flex items-center justify-center mx-auto mb-4 -mt-12 relative z-10 border-4 border-white shadow-lg">
+                        <i class="fas fa-coins text-2xl text-gold-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 text-center">Gold (Doré)</h3>
+                    <p class="text-gray-600 text-center mb-4">
+                        Raw gold in doré bar form, processed from ore to a semi-pure state, ready for further refinement.
+                    </p>
+                    <div class="bg-gold-50 rounded-lg p-3 text-center">
+                        <span class="text-gold-600 font-semibold">Purity: Variable (typically 60-90%)</span>
+                    </div>
                 </div>
-                <h3 class="text-2xl font-bold text-gray-900 mb-4">Gold (Doré)</h3>
-                <p class="text-gray-600 mb-6">
-                    Raw gold in doré bar form, processed from ore to a semi-pure state, ready for further refinement.
-                </p>
-                <div class="bg-white rounded-lg p-4 mb-4">
-                    <span class="text-gold-600 font-semibold">Purity: Variable (typically 60-90%)</span>
-                </div>
-                <a href="{{ route('frontend.contact') }}" class="btn-gold text-white px-6 py-3 rounded-full font-bold inline-block">
-                    Inquire Now
-                </a>
             </div>
 
             <!-- Processed Gold -->
-            <div class="bg-gradient-to-br from-gold-50 to-gold-100 rounded-2xl p-8 text-center card-hover border-2 border-gold-200">
-                <div class="w-24 h-24 bg-gradient-to-br from-gold-400 to-gold-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
-                    <i class="fas fa-gem text-4xl text-white"></i>
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden card-hover border border-gray-100">
+                <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=600&h=400&fit=crop" alt="Processed Gold" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="w-16 h-16 bg-gold-100 rounded-full flex items-center justify-center mx-auto mb-4 -mt-12 relative z-10 border-4 border-white shadow-lg">
+                        <i class="fas fa-gem text-2xl text-gold-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 text-center">Processed Gold</h3>
+                    <p class="text-gray-600 text-center mb-4">
+                        Refined gold of high purity, suitable for investment, jewelry manufacturing, and industrial applications.
+                    </p>
+                    <div class="bg-gold-50 rounded-lg p-3 text-center">
+                        <span class="text-gold-600 font-semibold">Purity: 99.9% (999.9)</span>
+                    </div>
                 </div>
-                <h3 class="text-2xl font-bold text-gray-900 mb-4">Processed Gold</h3>
-                <p class="text-gray-600 mb-6">
-                    Refined gold of high purity, suitable for investment, jewelry manufacturing, and industrial applications.
-                </p>
-                <div class="bg-white rounded-lg p-4 mb-4">
-                    <span class="text-gold-600 font-semibold">Purity: 99.9% (999.9)</span>
-                </div>
-                <a href="{{ route('frontend.contact') }}" class="btn-gold text-white px-6 py-3 rounded-full font-bold inline-block">
-                    Inquire Now
-                </a>
             </div>
 
             <!-- Gold-bearing Materials -->
-            <div class="bg-gradient-to-br from-gold-50 to-gold-100 rounded-2xl p-8 text-center card-hover border-2 border-gold-200">
-                <div class="w-24 h-24 bg-gradient-to-br from-gold-400 to-gold-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
-                    <i class="fas fa-mountain text-4xl text-white"></i>
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden card-hover border border-gray-100">
+                <img src="https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?w=600&h=400&fit=crop" alt="Gold-bearing Materials" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="w-16 h-16 bg-gold-100 rounded-full flex items-center justify-center mx-auto mb-4 -mt-12 relative z-10 border-4 border-white shadow-lg">
+                        <i class="fas fa-mountain text-2xl text-gold-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 text-center">Gold-bearing Materials</h3>
+                    <p class="text-gray-600 text-center mb-4">
+                        Various mineral concentrates and ore materials containing gold, sourced from reputable mining operations.
+                    </p>
+                    <div class="bg-gold-50 rounded-lg p-3 text-center">
+                        <span class="text-gold-600 font-semibold">Content: Variable by source</span>
+                    </div>
                 </div>
-                <h3 class="text-2xl font-bold text-gray-900 mb-4">Gold-bearing Materials</h3>
-                <p class="text-gray-600 mb-6">
-                    Various mineral concentrates and ore materials containing gold, sourced from reputable mining operations.
-                </p>
-                <div class="bg-white rounded-lg p-4 mb-4">
-                    <span class="text-gold-600 font-semibold">Content: Variable by source</span>
-                </div>
-                <a href="{{ route('frontend.contact') }}" class="btn-gold text-white px-6 py-3 rounded-full font-bold inline-block">
-                    Inquire Now
-                </a>
             </div>
         </div>
     </div>
@@ -94,19 +94,4 @@
     </div>
 </section>
 
-<!-- CTA Section -->
-<section class="py-20 gradient-gold">
-    <div class="max-w-4xl mx-auto px-4 text-center text-white">
-        <h2 class="text-4xl font-bold mb-6">Interested in Our Products?</h2>
-        <p class="text-xl mb-8 text-white/90">Contact us to discuss your requirements or to place an order.</p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="{{ route('frontend.contact') }}" class="bg-white text-gold-600 px-8 py-4 rounded-full font-bold hover:bg-gray-100 transition-all shadow-lg">
-                Contact Us
-            </a>
-            <a href="{{ route('frontend.consulting') }}" class="border-2 border-white text-white px-8 py-4 rounded-full font-bold hover:bg-white/10 transition-all">
-                Get Consulting
-            </a>
-        </div>
-    </div>
-</section>
 @endsection

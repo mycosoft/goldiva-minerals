@@ -80,19 +80,4 @@
     </div>
 </section>
 
-<!-- CTA Section -->
-<section class="py-20 gradient-gold">
-    <div class="max-w-4xl mx-auto px-4 text-center text-white">
-        <h2 class="text-4xl font-bold mb-6">Ready to Work With Us?</h2>
-        <p class="text-xl mb-8 text-white/90">Get in touch to discuss your mineral services needs.</p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="{{ route('frontend.contact') }}" class="bg-white text-gold-600 px-8 py-4 rounded-full font-bold hover:bg-gray-100 transition-all shadow-lg">
-                Contact Us
-            </a>
-            <a href="{{ route('frontend.consulting') }}" class="border-2 border-white text-white px-8 py-4 rounded-full font-bold hover:bg-white/10 transition-all">
-                Get Consulting
-            </a>
-        </div>
-    </div>
-</section>
 @endsection

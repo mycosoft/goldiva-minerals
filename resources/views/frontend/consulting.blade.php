@@ -1,124 +1,140 @@
 @extends('frontend.layouts.master')
 
-@section('title', 'Mineral Consulting - Goldiva Minerals')
+@section('title', 'Request a Consultation - Goldiva Minerals')
 
 @section('content')
 <!-- Hero Section -->
 <section class="pt-32 pb-20 hero-bg">
     <div class="max-w-7xl mx-auto px-4 text-center text-white fade-in">
-        <h1 class="text-5xl md:text-6xl font-bold mb-6">Mineral <span class="text-gradient">Consulting</span></h1>
-        <p class="text-xl text-gray-300 max-w-3xl mx-auto">Expert guidance and advisory services for your mineral operations.</p>
+        <h1 class="text-5xl md:text-6xl font-bold mb-6">Request a <span class="text-gradient">Consultation</span></h1>
+        <p class="text-xl text-gray-300 max-w-3xl mx-auto">Get in touch with our experts for professional mineral consultancy services.</p>
     </div>
 </section>
 
-<!-- Consulting Content -->
+<!-- Consulting Section -->
 <section class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4">
-        <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="grid lg:grid-cols-2 gap-16">
+            <!-- Consulting Info -->
             <div>
-                <h2 class="text-4xl font-bold text-gray-900 mb-6">Expert Guidance for Your Mineral Operations</h2>
-                <p class="text-lg text-gray-600 mb-6">
-                    Goldiva Minerals provides consulting services to guide clients in mineral processes, handling, and industry practices. Our experienced team helps you navigate the complexities of the mineral industry.
-                </p>
-                <p class="text-lg text-gray-600 mb-8">
-                    Whether you're a small-scale miner, an established business, or an investor looking to enter the mineral sector, we provide tailored advice to meet your specific needs.
-                </p>
-                <a href="{{ route('frontend.contact') }}" class="btn-gold text-white px-8 py-4 rounded-full font-bold inline-block shadow-lg">
-                    Schedule a Consultation
-                </a>
-            </div>
-            <div>
-                <img src="https://images.unsplash.com/photo-1610375461246-83df859d849d?w=600&h=400&fit=crop" alt="Mineral Consulting" class="rounded-2xl shadow-2xl">
-            </div>
-        </div>
-    </div>
-</section>
+                <h2 class="text-4xl font-bold text-gray-900 mb-8">Get Expert Guidance</h2>
+                
+                <div class="space-y-6">
+                    <div class="flex items-start">
+                        <div class="w-14 h-14 bg-gold-100 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
+                            <i class="fas fa-compass text-2xl text-gold-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-1">Process Guidance</h3>
+                            <p class="text-gray-600">Step-by-step guidance through mineral processing and handling procedures.</p>
+                        </div>
+                    </div>
 
-<!-- What We Offer -->
-<section class="py-20 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4">
-        <div class="text-center mb-16">
-            <h2 class="text-4xl font-bold text-gray-900 mb-4">What We Offer</h2>
-            <p class="text-lg text-gray-600">Comprehensive consulting services tailored to your needs</p>
-        </div>
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div class="bg-white p-8 rounded-2xl shadow-lg card-hover text-center">
-                <div class="w-16 h-16 gradient-gold rounded-full flex items-center justify-center mx-auto mb-6">
-                    <i class="fas fa-compass text-2xl text-white"></i>
-                </div>
-                <h3 class="text-xl font-bold text-gray-900 mb-3">Process Guidance</h3>
-                <p class="text-gray-600">Step-by-step guidance through mineral processing and handling procedures.</p>
-            </div>
-            <div class="bg-white p-8 rounded-2xl shadow-lg card-hover text-center">
-                <div class="w-16 h-16 gradient-gold rounded-full flex items-center justify-center mx-auto mb-6">
-                    <i class="fas fa-lightbulb text-2xl text-white"></i>
-                </div>
-                <h3 class="text-xl font-bold text-gray-900 mb-3">Industry Advice</h3>
-                <p class="text-gray-600">Expert insights on market trends, regulations, and best practices.</p>
-            </div>
-            <div class="bg-white p-8 rounded-2xl shadow-lg card-hover text-center">
-                <div class="w-16 h-16 gradient-gold rounded-full flex items-center justify-center mx-auto mb-6">
-                    <i class="fas fa-cogs text-2xl text-white"></i>
-                </div>
-                <h3 class="text-xl font-bold text-gray-900 mb-3">Operational Support</h3>
-                <p class="text-gray-600">Hands-on support to optimize your mineral operations.</p>
-            </div>
-            <div class="bg-white p-8 rounded-2xl shadow-lg card-hover text-center">
-                <div class="w-16 h-16 gradient-gold rounded-full flex items-center justify-center mx-auto mb-6">
-                    <i class="fas fa-file-signature text-2xl text-white"></i>
-                </div>
-                <h3 class="text-xl font-bold text-gray-900 mb-3">Compliance Assistance</h3>
-                <p class="text-gray-600">Help navigating regulatory requirements and documentation.</p>
-            </div>
-        </div>
-    </div>
-</section>
+                    <div class="flex items-start">
+                        <div class="w-14 h-14 bg-gold-100 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
+                            <i class="fas fa-lightbulb text-2xl text-gold-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-1">Industry Advice</h3>
+                            <p class="text-gray-600">Expert insights on market trends, regulations, and best practices.</p>
+                        </div>
+                    </div>
 
-<!-- Who We Help -->
-<section class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4">
-        <div class="text-center mb-16">
-            <h2 class="text-4xl font-bold text-gray-900 mb-4">Who We Help</h2>
-        </div>
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="text-center">
-                <div class="w-20 h-20 bg-gold-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <i class="fas fa-pickaxe text-3xl text-gold-600"></i>
+                    <div class="flex items-start">
+                        <div class="w-14 h-14 bg-gold-100 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
+                            <i class="fas fa-cogs text-2xl text-gold-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-1">Operational Support</h3>
+                            <p class="text-gray-600">Hands-on support to optimize your mineral operations.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="w-14 h-14 bg-gold-100 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
+                            <i class="fas fa-file-signature text-2xl text-gold-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-1">Compliance Assistance</h3>
+                            <p class="text-gray-600">Help navigating regulatory requirements and documentation.</p>
+                        </div>
+                    </div>
                 </div>
-                <h3 class="text-xl font-bold text-gray-900 mb-2">Small-Scale Miners</h3>
-                <p class="text-gray-600">Get professional guidance to improve your operations and market access.</p>
+
+                <div class="mt-12">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Connect With Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-12 h-12 bg-gold-500 text-white rounded-full flex items-center justify-center hover:bg-gold-600 transition-all">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 bg-gold-500 text-white rounded-full flex items-center justify-center hover:bg-gold-600 transition-all">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 bg-gold-500 text-white rounded-full flex items-center justify-center hover:bg-gold-600 transition-all">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 bg-gold-500 text-white rounded-full flex items-center justify-center hover:bg-gold-600 transition-all">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="text-center">
-                <div class="w-20 h-20 bg-gold-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <i class="fas fa-building text-3xl text-gold-600"></i>
-                </div>
-                <h3 class="text-xl font-bold text-gray-900 mb-2">Businesses</h3>
-                <p class="text-gray-600">Strategic advice for companies involved in mineral trading and processing.</p>
-            </div>
-            <div class="text-center">
-                <div class="w-20 h-20 bg-gold-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <i class="fas fa-user-tie text-3xl text-gold-600"></i>
-                </div>
-                <h3 class="text-xl font-bold text-gray-900 mb-2">Investors</h3>
-                <p class="text-gray-600">Due diligence and market entry guidance for mineral sector investments.</p>
+
+            <!-- Consultation Form -->
+            <div class="bg-gray-50 rounded-2xl p-8">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">Request a Consultation</h2>
+                <form action="#" method="POST">
+                    @csrf
+                    <div class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">Name *</label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-gold-500 focus:ring-2 focus:ring-gold-200 outline-none transition-all" placeholder="Your full name">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">Email *</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-gold-500 focus:ring-2 focus:ring-gold-200 outline-none transition-all" placeholder="your.email@example.com">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-semibold text-gray-700 mb-2">Phone *</label>
+                            <input type="tel" id="phone" name="phone" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-gold-500 focus:ring-2 focus:ring-gold-200 outline-none transition-all" placeholder="+256 700 000 000">
+                        </div>
+                        <div>
+                            <label for="company" class="block text-sm font-semibold text-gray-700 mb-2">Company (optional)</label>
+                            <input type="text" id="company" name="company" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-gold-500 focus:ring-2 focus:ring-gold-200 outline-none transition-all" placeholder="Your company name">
+                        </div>
+                        <div>
+                            <label for="service_type" class="block text-sm font-semibold text-gray-700 mb-2">Service Type *</label>
+                            <select id="service_type" name="service_type" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-gold-500 focus:ring-2 focus:ring-gold-200 outline-none transition-all bg-white">
+                                <option value="">Select a service type</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="gold_trading">Gold Trading</option>
+                                <option value="smelting">Smelting Services</option>
+                                <option value="documentation">Documentation</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">Message *</label>
+                            <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-gold-500 focus:ring-2 focus:ring-gold-200 outline-none transition-all resize-none" placeholder="How can we help you?"></textarea>
+                        </div>
+                        <button type="submit" class="w-full btn-gold text-white py-4 rounded-xl font-bold text-lg shadow-lg">
+                            Submit Request
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
 </section>
 
 <!-- CTA Section -->
-<section class="py-20 gradient-gold">
-    <div class="max-w-4xl mx-auto px-4 text-center text-white">
-        <h2 class="text-4xl font-bold mb-6">Ready to Get Started?</h2>
-        <p class="text-xl mb-8 text-white/90">Contact us for consulting services and let our experts guide your mineral operations.</p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="{{ route('frontend.contact') }}" class="bg-white text-gold-600 px-8 py-4 rounded-full font-bold hover:bg-gray-100 transition-all shadow-lg">
-                Contact Us
-            </a>
-            <a href="{{ route('frontend.home') }}" class="border-2 border-white text-white px-8 py-4 rounded-full font-bold hover:bg-white/10 transition-all">
-                Learn More
-            </a>
-        </div>
+<section class="py-16 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+        <h3 class="text-2xl font-bold text-gray-900 mb-4">Need Immediate Assistance?</h3>
+        <p class="text-gray-600 mb-6">Our team is ready to help with your mineral services needs.</p>
+        <a href="{{ route('frontend.contact') }}" class="btn-gold text-white px-8 py-4 rounded-full font-bold inline-block shadow-lg">
+            Contact Us Directly
+        </a>
     </div>
 </section>
 @endsection

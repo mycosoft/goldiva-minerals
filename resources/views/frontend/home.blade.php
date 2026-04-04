@@ -3,7 +3,7 @@
 @section('title', 'Goldiva Minerals - Reliable Mineral Services in Uganda & Africa')
 
 @section('content')
-<section class="hero-bg min-h-screen flex items-center justify-center relative overflow-hidden">
+<section class="hero-bg min-h-[80vh] flex items-center justify-center relative overflow-hidden">
     <div class="absolute inset-0" style="background-image: url('https://images.unsplash.com/photo-1610375461246-83df859d849d?w=1920'); background-size: cover; background-position: center;"></div>
     <div class="absolute inset-0 bg-gray-900/75"></div>
     <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-gray-900/50"></div>
@@ -36,7 +36,7 @@
                 </a>
             </div>
             
-            <div class="absolute bottom-8 left-1/2 -translate-x-1/2" data-aos="fade-up" data-aos-delay="200">
+            <div class="absolute bottom-20 left-1/2 -translate-x-1/2" data-aos="fade-up" data-aos-delay="200">
                 <a href="#about" class="text-gold-400 animate-bounce inline-block">
                     <i class="fas fa-chevron-down text-2xl"></i>
                 </a>
@@ -84,32 +84,32 @@
 
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div class="card-hover bg-white rounded-2xl p-8 shadow-lg border border-gray-100" data-aos="fade-up" data-aos-delay="100">
-                <div class="w-16 h-16 gradient-gold rounded-2xl flex items-center justify-center mb-6 shadow-lg">
-                    <i class="fas fa-coins text-white text-2xl"></i>
+                <div class="w-16 h-16 rounded-full border-2 border-gold-500 flex items-center justify-center mb-6 shadow-lg mx-auto">
+                    <i class="fas fa-coins text-gold-500 text-2xl"></i>
                 </div>
                 <h3 class="text-xl font-bold text-gray-900 mb-3">Buying & Selling</h3>
                 <p class="text-gray-600">Expert gold trading services with competitive rates and secure transactions across Uganda and Africa.</p>
             </div>
 
             <div class="card-hover bg-white rounded-2xl p-8 shadow-lg border border-gray-100" data-aos="fade-up" data-aos-delay="200">
-                <div class="w-16 h-16 gradient-gold rounded-2xl flex items-center justify-center mb-6 shadow-lg">
-                    <i class="fas fa-fire text-white text-2xl"></i>
+                <div class="w-16 h-16 rounded-full border-2 border-gold-500 flex items-center justify-center mb-6 shadow-lg mx-auto">
+                    <i class="fas fa-fire text-gold-500 text-2xl"></i>
                 </div>
                 <h3 class="text-xl font-bold text-gray-900 mb-3">Smelting</h3>
                 <p class="text-gray-600">Professional smelting services ensuring the highest purity levels for your gold and mineral products.</p>
             </div>
 
             <div class="card-hover bg-white rounded-2xl p-8 shadow-lg border border-gray-100" data-aos="fade-up" data-aos-delay="300">
-                <div class="w-16 h-16 gradient-gold rounded-2xl flex items-center justify-center mb-6 shadow-lg">
-                    <i class="fas fa-file-alt text-white text-2xl"></i>
+                <div class="w-16 h-16 rounded-full border-2 border-gold-500 flex items-center justify-center mb-6 shadow-lg mx-auto">
+                    <i class="fas fa-file-alt text-gold-500 text-2xl"></i>
                 </div>
                 <h3 class="text-xl font-bold text-gray-900 mb-3">Documentation</h3>
                 <p class="text-gray-600">Complete documentation services including export/import permits, assays, and regulatory compliance.</p>
             </div>
 
             <div class="card-hover bg-white rounded-2xl p-8 shadow-lg border border-gray-100" data-aos="fade-up" data-aos-delay="400">
-                <div class="w-16 h-16 gradient-gold rounded-2xl flex items-center justify-center mb-6 shadow-lg">
-                    <i class="fas fa-headset text-white text-2xl"></i>
+                <div class="w-16 h-16 rounded-full border-2 border-gold-500 flex items-center justify-center mb-6 shadow-lg mx-auto">
+                    <i class="fas fa-headset text-gold-500 text-2xl"></i>
                 </div>
                 <h3 class="text-xl font-bold text-gray-900 mb-3">Mineral Consultancy</h3>
                 <p class="text-gray-600">Expert advisory services for mining operations, investment decisions, and industry best practices.</p>

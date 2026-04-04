@@ -169,6 +169,9 @@
                 </div>
             </div>
         </div>
+        <button id="moveToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="fixed bottom-8 right-8 bg-gradient-to-br from-gold-400 to-gold-600 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300 hover:from-gold-500 hover:to-gold-700 z-50">
+            <i class="fas fa-arrow-up"></i>
+        </button>
     </footer>
 
     <script>
@@ -185,6 +188,15 @@
                 navbar.classList.add('shadow-xl');
             } else {
                 navbar.classList.remove('shadow-xl');
+            }
+
+            const moveToTopBtn = document.getElementById('moveToTop');
+            if (window.scrollY > 300) {
+                moveToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+                moveToTopBtn.classList.add('opacity-100');
+            } else {
+                moveToTopBtn.classList.add('opacity-0', 'pointer-events-none');
+                moveToTopBtn.classList.remove('opacity-100');
             }
         });
 

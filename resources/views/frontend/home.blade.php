@@ -21,6 +21,11 @@
                     <span>Get Consulting</span>
                 </a>
             </div>
+            <div class="absolute bottom-8 left-1/2 -translate-x-1/2" data-aos="fade-up" data-aos-delay="400">
+                <a href="#about" class="text-white animate-bounce block">
+                    <i class="fas fa-mouse text-3xl"></i>
+                </a>
+            </div>
         </div>
     </div>
 </section>
@@ -54,7 +59,7 @@
     </div>
 </section>
 
-<section class="py-20 bg-white">
+<section class="py-20 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16" data-aos="fade-up">
             <span class="text-gold-600 font-semibold text-sm uppercase tracking-wider">What We Offer</span>
@@ -128,7 +133,7 @@
     </div>
 </section>
 
-<section class="py-16 bg-gray-50">
+<section class="py-16 bg-gray-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12" data-aos="fade-up">
             <span class="text-gold-600 font-semibold text-sm uppercase tracking-wider">Why Choose Us</span>
@@ -178,19 +183,19 @@
     <div class="absolute top-0 left-1/4 w-96 h-96 bg-gold-500/5 rounded-full blur-3xl"></div>
     <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-gold-600/5 rounded-full blur-3xl"></div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="text-center mb-16">
+        <div class="text-center mb-16" data-aos="fade-up">
             <span class="text-gold-400 font-semibold text-sm uppercase tracking-wider">Our Process</span>
             <h2 class="text-3xl md:text-4xl font-bold text-white mt-2">From Mine to Market</h2>
             <p class="text-gray-400 mt-4 max-w-2xl mx-auto">Our streamlined process ensures maximum value at every stage</p>
         </div>
 
-        <div class="flex justify-between items-start gap-4">
+        <div class="flex justify-between items-center gap-4">
             <div class="flex-1 bg-gradient-to-br from-gray-900 to-gray-800 border border-gold-500/30 rounded-2xl p-6 text-center hover:border-gold-500/60 transition-all duration-300 hover:shadow-xl hover:shadow-gold-500/10" data-aos="fade-up" data-aos-delay="100">
                 <div class="w-16 h-16 bg-gradient-to-br from-gold-400 to-gold-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg shadow-gold-500/30">
                     <i class="fas fa-hammer text-white text-2xl"></i>
                 </div>
                 <h3 class="text-lg font-bold text-white mb-2">Extraction Process</h3>
-                <p class="text-gray-400 text-sm">Professional mining and extraction</p>
+                <p class="text-gray-400 text-base">Professional mining and extraction from verified mineral sites</p>
             </div>
 
             <div class="flex items-center justify-center text-gold-500 text-2xl">
@@ -202,7 +207,7 @@
                     <i class="fas fa-cogs text-white text-2xl"></i>
                 </div>
                 <h3 class="text-lg font-bold text-white mb-2">Processing</h3>
-                <p class="text-gray-400 text-sm">Crushing and concentration</p>
+                <p class="text-gray-400 text-base">Crushing, grinding and concentration of mineral ores</p>
             </div>
 
             <div class="flex items-center justify-center text-gold-500 text-2xl">
@@ -214,7 +219,7 @@
                     <i class="fas fa-vial text-white text-2xl"></i>
                 </div>
                 <h3 class="text-lg font-bold text-white mb-2">Recovery</h3>
-                <p class="text-gray-400 text-sm">Gold recovery and assaying</p>
+                <p class="text-gray-400 text-base">Advanced gold recovery methods with precision assaying</p>
             </div>
 
             <div class="flex items-center justify-center text-gold-500 text-2xl">
@@ -226,21 +231,21 @@
                     <i class="fas fa-file-signature text-white text-2xl"></i>
                 </div>
                 <h3 class="text-lg font-bold text-white mb-2">Documentation</h3>
-                <p class="text-gray-400 text-sm">Legal export and compliance</p>
+                <p class="text-gray-400 text-base">Complete legal export procedures with full compliance</p>
             </div>
         </div>
     </div>
 </section>
 
-<section class="py-16 bg-gray-50">
+<section class="py-16 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
+        <div class="text-center mb-12" data-aos="fade-up">
             <span class="text-gold-600 font-semibold text-sm uppercase tracking-wider">Testimonials</span>
             <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2">What Our Clients Say</h2>
         </div>
 
         <div class="grid md:grid-cols-3 gap-6">
-            <div class="bg-gradient-to-br from-gold-50 to-white rounded-xl p-6 shadow-lg border border-gold-100">
+            <div class="bg-gradient-to-br from-gold-50 to-white rounded-xl p-6 shadow-lg border border-gold-100" data-aos="fade-up" data-aos-delay="100">
                 <div class="flex items-center mb-3">
                     <div class="text-gold-400 text-sm">
                         <i class="fas fa-star"></i>
@@ -257,7 +262,7 @@
                 </div>
             </div>
 
-            <div class="bg-gradient-to-br from-gold-50 to-white rounded-xl p-6 shadow-lg border border-gold-100">
+            <div class="bg-gradient-to-br from-gold-50 to-white rounded-xl p-6 shadow-lg border border-gold-100" data-aos="fade-up" data-aos-delay="200">
                 <div class="flex items-center mb-3">
                     <div class="text-gold-400 text-sm">
                         <i class="fas fa-star"></i>
@@ -274,7 +279,7 @@
                 </div>
             </div>
 
-            <div class="bg-gradient-to-br from-gold-50 to-white rounded-xl p-6 shadow-lg border border-gold-100">
+            <div class="bg-gradient-to-br from-gold-50 to-white rounded-xl p-6 shadow-lg border border-gold-100" data-aos="fade-up" data-aos-delay="300">
                 <div class="flex items-center mb-3">
                     <div class="text-gold-400 text-sm">
                         <i class="fas fa-star"></i>

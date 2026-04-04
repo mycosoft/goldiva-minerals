@@ -10,12 +10,37 @@ use App\Http\Controllers\Admin\ServiceController;
 use App\Http\Controllers\Admin\UserController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
+// Frontend Routes
+Route::name('frontend.')->group(function () {
+    Route::get('/', function () {
+        return view('frontend.home');
+    })->name('home');
+
+    Route::get('/about', function () {
+        return view('frontend.about');
+    })->name('about');
+
+    Route::get('/services', function () {
+        return view('frontend.services');
+    })->name('services');
+
+    Route::get('/products', function () {
+        return view('frontend.products');
+    })->name('products');
+
+    Route::get('/contact', function () {
+        return view('frontend.contact');
+    })->name('contact');
+
+    Route::get('/consulting', function () {
+        return view('frontend.consulting');
+    })->name('consulting');
 });
 
+// Auth Routes
 Auth::routes();
 
+// Admin Routes
 Route::prefix('admin')->name('admin.')->middleware(['auth', 'role:admin|site manager'])->group(function () {
     Route::get('/dashboard', [HomeController::class, 'index'])->name('dashboard');
 

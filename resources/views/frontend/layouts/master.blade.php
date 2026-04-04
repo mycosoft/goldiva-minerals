@@ -44,6 +44,9 @@
         .fade-in { animation: fadeIn 0.8s ease-out forwards; }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
         .hero-bg { background: linear-gradient(135deg, rgba(52, 38, 13, 0.95) 0%, rgba(92, 76, 24, 0.9) 100%), url('https://images.unsplash.com/photo-1610375461246-83df859d849d?w=1920'); background-size: cover; background-position: center; }
+        .section-title { position: relative; display: inline-block; }
+        .section-title::after { content: ''; position: absolute; bottom: -8px; left: 50%; transform: translateX(-50%); width: 60px; height: 3px; background: linear-gradient(90deg, #D4AF37, #FFD700, #D4AF37); border-radius: 2px; }
+        .section-title-dark::after { background: linear-gradient(90deg, #D4AF37, #FFD700, #D4AF37); }
     </style>
 </head>
 <body class="bg-gray-50 font-sans antialiased">
@@ -108,7 +111,7 @@
         </div>
     </nav>
 
-    <main class="pt-20">
+    <main class="pt-16">
         @yield('content')
     </main>
 

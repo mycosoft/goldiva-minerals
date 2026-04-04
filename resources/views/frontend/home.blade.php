@@ -44,7 +44,7 @@
         <div class="grid lg:grid-cols-2 gap-16 items-center">
             <div data-aos="fade-right">
                 <span class="text-gold-600 font-semibold text-sm uppercase tracking-wider">About Goldiva Minerals</span>
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2 mb-6">Excellence in Mineral Services</h2>
+                <h2 class="section-title text-3xl md:text-4xl font-bold text-gray-900 mt-2 mb-6">Excellence in Mineral Services</h2>
                 <p class="text-gray-600 leading-relaxed mb-6">
                     Goldiva Minerals is a premier mineral services company based in Uganda, serving clients across Africa. With years of experience in the industry, we have built a reputation for reliability, professionalism, and exceptional service delivery.
                 </p>
@@ -72,7 +72,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16" data-aos="fade-up">
             <span class="text-gold-600 font-semibold text-sm uppercase tracking-wider">What We Offer</span>
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2">Our Services</h2>
+            <h2 class="section-title text-3xl md:text-4xl font-bold text-gray-900 mt-2">Our Services</h2>
             <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Comprehensive mineral services tailored to meet your needs</p>
         </div>
 
@@ -146,7 +146,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12" data-aos="fade-up">
             <span class="text-gold-600 font-semibold text-sm uppercase tracking-wider">Why Choose Us</span>
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2">The Goldiva Advantage</h2>
+            <h2 class="section-title text-3xl md:text-4xl font-bold text-gray-900 mt-2">The Goldiva Advantage</h2>
             <p class="text-gray-600 mt-4 max-w-2xl mx-auto">What sets us apart in the mineral services industry</p>
         </div>
 
@@ -194,7 +194,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="text-center mb-16" data-aos="fade-up">
             <span class="text-gold-400 font-semibold text-sm uppercase tracking-wider">Our Process</span>
-            <h2 class="text-3xl md:text-4xl font-bold text-white mt-2">From Mine to Market</h2>
+            <h2 class="section-title section-title-dark text-3xl md:text-4xl font-bold text-white mt-2">From Mine to Market</h2>
             <p class="text-gray-400 mt-4 max-w-2xl mx-auto">Our streamlined process ensures maximum value at every stage</p>
         </div>
 
@@ -246,11 +246,11 @@
     </div>
 </section>
 
-<section class="py-16 bg-white">
+<section class="py-16 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12" data-aos="fade-up">
             <span class="text-gold-600 font-semibold text-sm uppercase tracking-wider">Testimonials</span>
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2">What Our Clients Say</h2>
+            <h2 class="section-title text-3xl md:text-4xl font-bold text-gray-900 mt-2">What Our Clients Say</h2>
         </div>
 
         <div class="grid md:grid-cols-3 gap-6">
@@ -312,7 +312,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12" data-aos="fade-up">
             <span class="text-gold-600 font-semibold text-sm uppercase tracking-wider">Our Operations</span>
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2">Operations Across East Africa</h2>
+            <h2 class="section-title text-3xl md:text-4xl font-bold text-gray-900 mt-2">Operations Across East Africa</h2>
             <p class="text-gray-600 mt-3">Explore our active mining operations and facilities through our gallery.</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

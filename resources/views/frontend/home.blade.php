@@ -173,10 +173,10 @@
 </section>
 
 <section class="py-20 relative overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1920'); background-size: cover; background-position: center;"></div>
-    <div class="absolute inset-0 bg-gray-900/85"></div>
-    <div class="absolute top-0 left-1/4 w-96 h-96 bg-gold-500/10 rounded-full blur-3xl"></div>
-    <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-gold-600/10 rounded-full blur-3xl"></div>
+    <div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1920'); background-size: cover; background-position: center; opacity: 0.15;"></div>
+    <div class="absolute inset-0 bg-gray-900/90"></div>
+    <div class="absolute top-0 left-1/4 w-96 h-96 bg-gold-500/5 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-gold-600/5 rounded-full blur-3xl"></div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="text-center mb-16">
             <span class="text-gold-400 font-semibold text-sm uppercase tracking-wider">Our Process</span>
@@ -184,86 +184,45 @@
             <p class="text-gray-400 mt-4 max-w-2xl mx-auto">Our streamlined process ensures maximum value at every stage</p>
         </div>
 
-        <div class="flex justify-between items-start gap-4">
-            <div class="flex-1 text-center">
-                <div class="relative inline-block">
-                    <div class="w-20 h-20 rounded-full bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center shadow-lg shadow-gold-500/30 mx-auto mb-6">
-                        <span class="text-white font-bold text-2xl">1</span>
-                    </div>
-                    <div class="absolute -top-1 -right-1 w-6 h-6 bg-gold-400 rounded-full flex items-center justify-center">
-                        <i class="fas fa-search text-gray-900 text-xs"></i>
-                    </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-gradient-to-br from-gray-900 to-gray-800 border border-gold-500/30 rounded-2xl p-8 text-center hover:border-gold-500/60 transition-all duration-300 hover:shadow-xl hover:shadow-gold-500/10">
+                <div class="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-yellow-400 to-amber-600 mb-4">1</div>
+                <div class="w-14 h-14 bg-gradient-to-br from-gold-400/20 to-gold-600/20 rounded-xl flex items-center justify-center mx-auto mb-4 border border-gold-500/30">
+                    <i class="fas fa-hammer text-gold-400 text-xl"></i>
                 </div>
-                <h3 class="text-lg font-bold text-white mb-2">Exploration</h3>
-                <p class="text-gray-400 text-sm">Identifying mineral deposits with precision</p>
+                <h3 class="text-xl font-bold text-white mb-3">Site Operations & Extraction</h3>
+                <div class="w-12 h-0.5 bg-gradient-to-r from-transparent via-gold-500 to-transparent mx-auto mb-3"></div>
+                <p class="text-gray-400 text-sm">Professional mining and extraction operations with state-of-the-art equipment</p>
             </div>
 
-            <div class="flex items-center justify-center text-gold-500 text-2xl mx-2">
-                <i class="fas fa-arrow-right"></i>
-            </div>
-
-            <div class="flex-1 text-center">
-                <div class="relative inline-block">
-                    <div class="w-20 h-20 rounded-full bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center shadow-lg shadow-gold-500/30 mx-auto mb-6">
-                        <span class="text-white font-bold text-2xl">2</span>
-                    </div>
-                    <div class="absolute -top-1 -right-1 w-6 h-6 bg-gold-400 rounded-full flex items-center justify-center">
-                        <i class="fas fa-hammer text-gray-900 text-xs"></i>
-                    </div>
+            <div class="bg-gradient-to-br from-gray-900 to-gray-800 border border-gold-500/30 rounded-2xl p-8 text-center hover:border-gold-500/60 transition-all duration-300 hover:shadow-xl hover:shadow-gold-500/10">
+                <div class="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-yellow-400 to-amber-600 mb-4">2</div>
+                <div class="w-14 h-14 bg-gradient-to-br from-gold-400/20 to-gold-600/20 rounded-xl flex items-center justify-center mx-auto mb-4 border border-gold-500/30">
+                    <i class="fas fa-cogs text-gold-400 text-xl"></i>
                 </div>
-                <h3 class="text-lg font-bold text-white mb-2">Mining</h3>
-                <p class="text-gray-400 text-sm">Professional extraction operations</p>
+                <h3 class="text-xl font-bold text-white mb-3">Initial Processing</h3>
+                <div class="w-12 h-0.5 bg-gradient-to-r from-transparent via-gold-500 to-transparent mx-auto mb-3"></div>
+                <p class="text-gray-400 text-sm">Crushing, grinding, and concentration to prepare ore for gold recovery</p>
             </div>
 
-            <div class="flex items-center justify-center text-gold-500 text-2xl mx-2">
-                <i class="fas fa-arrow-right"></i>
-            </div>
-
-            <div class="flex-1 text-center">
-                <div class="relative inline-block">
-                    <div class="w-20 h-20 rounded-full bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center shadow-lg shadow-gold-500/30 mx-auto mb-6">
-                        <span class="text-white font-bold text-2xl">3</span>
-                    </div>
-                    <div class="absolute -top-1 -right-1 w-6 h-6 bg-gold-400 rounded-full flex items-center justify-center">
-                        <i class="fas fa-cogs text-gray-900 text-xs"></i>
-                    </div>
+            <div class="bg-gradient-to-br from-gray-900 to-gray-800 border border-gold-500/30 rounded-2xl p-8 text-center hover:border-gold-500/60 transition-all duration-300 hover:shadow-xl hover:shadow-gold-500/10">
+                <div class="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-yellow-400 to-amber-600 mb-4">3</div>
+                <div class="w-14 h-14 bg-gradient-to-br from-gold-400/20 to-gold-600/20 rounded-xl flex items-center justify-center mx-auto mb-4 border border-gold-500/30">
+                    <i class="fas fa-vial text-gold-400 text-xl"></i>
                 </div>
-                <h3 class="text-lg font-bold text-white mb-2">Processing</h3>
-                <p class="text-gray-400 text-sm">Crushing and concentration</p>
+                <h3 class="text-xl font-bold text-white mb-3">Gold Recovery Process</h3>
+                <div class="w-12 h-0.5 bg-gradient-to-r from-transparent via-gold-500 to-transparent mx-auto mb-3"></div>
+                <p class="text-gray-400 text-sm">Advanced recovery techniques with precision assaying for guaranteed purity</p>
             </div>
 
-            <div class="flex items-center justify-center text-gold-500 text-2xl mx-2">
-                <i class="fas fa-arrow-right"></i>
-            </div>
-
-            <div class="flex-1 text-center">
-                <div class="relative inline-block">
-                    <div class="w-20 h-20 rounded-full bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center shadow-lg shadow-gold-500/30 mx-auto mb-6">
-                        <span class="text-white font-bold text-2xl">4</span>
-                    </div>
-                    <div class="absolute -top-1 -right-1 w-6 h-6 bg-gold-400 rounded-full flex items-center justify-center">
-                        <i class="fas fa-fire text-gray-900 text-xs"></i>
-                    </div>
+            <div class="bg-gradient-to-br from-gray-900 to-gray-800 border border-gold-500/30 rounded-2xl p-8 text-center hover:border-gold-500/60 transition-all duration-300 hover:shadow-xl hover:shadow-gold-500/10">
+                <div class="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-yellow-400 to-amber-600 mb-4">4</div>
+                <div class="w-14 h-14 bg-gradient-to-br from-gold-400/20 to-gold-600/20 rounded-xl flex items-center justify-center mx-auto mb-4 border border-gold-500/30">
+                    <i class="fas fa-file-signature text-gold-400 text-xl"></i>
                 </div>
-                <h3 class="text-lg font-bold text-white mb-2">Smelting</h3>
-                <p class="text-gray-400 text-sm">Refining to ultimate purity</p>
-            </div>
-
-            <div class="flex items-center justify-center text-gold-500 text-2xl mx-2">
-                <i class="fas fa-arrow-right"></i>
-            </div>
-
-            <div class="flex-1 text-center">
-                <div class="relative inline-block">
-                    <div class="w-20 h-20 rounded-full bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center shadow-lg shadow-gold-500/30 mx-auto mb-6">
-                        <span class="text-white font-bold text-2xl">5</span>
-                    </div>
-                    <div class="absolute -top-1 -right-1 w-6 h-6 bg-gold-400 rounded-full flex items-center justify-center">
-                        <i class="fas fa-globe text-gray-900 text-xs"></i>
-                    </div>
-                </div>
-                <h3 class="text-lg font-bold text-white mb-2">Market</h3>
-                <p class="text-gray-400 text-sm">Global distribution network</p>
+                <h3 class="text-xl font-bold text-white mb-3">Production & Documentation</h3>
+                <div class="w-12 h-0.5 bg-gradient-to-r from-transparent via-gold-500 to-transparent mx-auto mb-3"></div>
+                <p class="text-gray-400 text-sm">Complete documentation and legal export procedures for international markets</p>
             </div>
         </div>
     </div>

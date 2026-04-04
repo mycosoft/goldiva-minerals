@@ -3,29 +3,34 @@
 @section('title', 'Goldiva Minerals - Reliable Mineral Services in Uganda & Africa')
 
 @section('content')
-<section class="hero-bg min-h-[85vh] flex items-center relative overflow-hidden border-b-4 border-gold-500">
-    <div class="absolute inset-0 bg-gradient-to-r from-gray-900/90 to-transparent" style="background-image: url('https://images.unsplash.com/photo-1610375461246-83df859d849d?w=1920'); background-size: cover; background-position: center;"></div>
-    <div class="absolute inset-0 bg-gradient-to-r from-gray-900/90 to-transparent"></div>
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
-        <div class="max-w-3xl text-left">
-            <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight mb-6" data-aos="fade-up">
-                Reliable Mineral Services in <span class="text-gradient">Uganda & Africa</span>
-            </h1>
-            <div class="flex flex-wrap gap-4" data-aos="fade-up" data-aos-delay="200">
-                <a href="{{ route('frontend.contact') }}" class="bg-white text-gray-900 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all shadow-lg flex items-center space-x-2">
-                    <span>Contact Us</span>
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-                <a href="{{ route('frontend.consulting') }}" class="btn-gold text-white px-8 py-4 rounded-full font-semibold shadow-lg flex items-center space-x-2">
-                    <i class="fas fa-chart-line"></i>
-                    <span>Get Consulting</span>
-                </a>
+<section class="hero-bg min-h-screen flex items-center relative overflow-hidden border-b-4 border-gold-500">
+    <div class="absolute inset-0" style="background-image: url('https://images.unsplash.com/photo-1610375461246-83df859d849d?w=1920'); background-size: cover; background-position: center;"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+        <div class="flex">
+            <div class="w-full lg:w-3/5 bg-gray-900/80 backdrop-blur-sm rounded-r-3xl p-10 lg:p-16 flex flex-col justify-between" style="min-height: 600px;">
+                <div data-aos="fade-up">
+                    <h1 class="text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight mb-4">
+                        Reliable Mineral Services in <span class="text-gradient">Uganda & Africa</span>
+                    </h1>
+                    <p class="text-gray-300 text-lg mb-8">Your trusted partner for gold trading, smelting, and mineral consultancy</p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="{{ route('frontend.contact') }}" class="bg-white text-gray-900 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all shadow-lg flex items-center space-x-2">
+                            <span>Contact Us</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="{{ route('frontend.consulting') }}" class="btn-gold text-white px-8 py-4 rounded-full font-semibold shadow-lg flex items-center space-x-2">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Get Consulting</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                    <a href="#about" class="text-gold-400 animate-bounce inline-block">
+                        <i class="fas fa-chevron-down text-2xl"></i>
+                    </a>
+                </div>
             </div>
-            <div class="absolute bottom-8 left-1/2 -translate-x-1/2" data-aos="fade-up" data-aos-delay="400">
-                <a href="#about" class="text-white animate-bounce block">
-                    <i class="fas fa-mouse text-3xl"></i>
-                </a>
-            </div>
+            <div class="hidden lg:block lg:w-2/5"></div>
         </div>
     </div>
 </section>

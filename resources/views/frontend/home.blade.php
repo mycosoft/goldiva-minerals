@@ -172,54 +172,98 @@
     </div>
 </section>
 
-<section class="py-16 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-            <span class="text-gold-600 font-semibold text-sm uppercase tracking-wider">Our Process</span>
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2">From Mine to Market</h2>
+<section class="py-20 relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1920'); background-size: cover; background-position: center;"></div>
+    <div class="absolute inset-0 bg-gray-900/85"></div>
+    <div class="absolute top-0 left-1/4 w-96 h-96 bg-gold-500/10 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-gold-600/10 rounded-full blur-3xl"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center mb-16">
+            <span class="text-gold-400 font-semibold text-sm uppercase tracking-wider">Our Process</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-white mt-2">From Mine to Market</h2>
+            <p class="text-gray-400 mt-4 max-w-2xl mx-auto">Our streamlined process ensures maximum value at every stage</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100 text-center">
-                <div class="w-12 h-12 gradient-gold rounded-full flex items-center justify-center mb-4 shadow-lg mx-auto">
-                    <span class="text-white font-bold text-lg">1</span>
+        <div class="flex justify-between items-start gap-4">
+            <div class="flex-1 text-center">
+                <div class="relative inline-block">
+                    <div class="w-20 h-20 rounded-full bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center shadow-lg shadow-gold-500/30 mx-auto mb-6">
+                        <span class="text-white font-bold text-2xl">1</span>
+                    </div>
+                    <div class="absolute -top-1 -right-1 w-6 h-6 bg-gold-400 rounded-full flex items-center justify-center">
+                        <i class="fas fa-search text-gray-900 text-xs"></i>
+                    </div>
                 </div>
-                <h3 class="text-lg font-bold text-gray-900 mb-2">Exploration</h3>
-                <p class="text-gray-600 text-sm">Identifying mineral deposits</p>
+                <h3 class="text-lg font-bold text-white mb-2">Exploration</h3>
+                <p class="text-gray-400 text-sm">Identifying mineral deposits with precision</p>
             </div>
 
-            <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100 text-center">
-                <div class="w-12 h-12 gradient-gold rounded-full flex items-center justify-center mb-4 shadow-lg mx-auto">
-                    <span class="text-white font-bold text-lg">2</span>
-                </div>
-                <h3 class="text-lg font-bold text-gray-900 mb-2">Mining</h3>
-                <p class="text-gray-600 text-sm">Professional extraction</p>
+            <div class="flex items-center justify-center text-gold-500 text-2xl mx-2">
+                <i class="fas fa-arrow-right"></i>
             </div>
 
-            <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100 text-center">
-                <div class="w-12 h-12 gradient-gold rounded-full flex items-center justify-center mb-4 shadow-lg mx-auto">
-                    <span class="text-white font-bold text-lg">3</span>
+            <div class="flex-1 text-center">
+                <div class="relative inline-block">
+                    <div class="w-20 h-20 rounded-full bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center shadow-lg shadow-gold-500/30 mx-auto mb-6">
+                        <span class="text-white font-bold text-2xl">2</span>
+                    </div>
+                    <div class="absolute -top-1 -right-1 w-6 h-6 bg-gold-400 rounded-full flex items-center justify-center">
+                        <i class="fas fa-hammer text-gray-900 text-xs"></i>
+                    </div>
                 </div>
-                <h3 class="text-lg font-bold text-gray-900 mb-2">Processing</h3>
-                <p class="text-gray-600 text-sm">Crushing and concentration</p>
-            </div>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 max-w-3xl mx-auto">
-            <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100 text-center">
-                <div class="w-12 h-12 gradient-gold rounded-full flex items-center justify-center mb-4 shadow-lg mx-auto">
-                    <span class="text-white font-bold text-lg">4</span>
-                </div>
-                <h3 class="text-lg font-bold text-gray-900 mb-2">Smelting</h3>
-                <p class="text-gray-600 text-sm">Refining to purity</p>
+                <h3 class="text-lg font-bold text-white mb-2">Mining</h3>
+                <p class="text-gray-400 text-sm">Professional extraction operations</p>
             </div>
 
-            <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100 text-center">
-                <div class="w-12 h-12 gradient-gold rounded-full flex items-center justify-center mb-4 shadow-lg mx-auto">
-                    <span class="text-white font-bold text-lg">5</span>
+            <div class="flex items-center justify-center text-gold-500 text-2xl mx-2">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+
+            <div class="flex-1 text-center">
+                <div class="relative inline-block">
+                    <div class="w-20 h-20 rounded-full bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center shadow-lg shadow-gold-500/30 mx-auto mb-6">
+                        <span class="text-white font-bold text-2xl">3</span>
+                    </div>
+                    <div class="absolute -top-1 -right-1 w-6 h-6 bg-gold-400 rounded-full flex items-center justify-center">
+                        <i class="fas fa-cogs text-gray-900 text-xs"></i>
+                    </div>
                 </div>
-                <h3 class="text-lg font-bold text-gray-900 mb-2">Market</h3>
-                <p class="text-gray-600 text-sm">Global distribution</p>
+                <h3 class="text-lg font-bold text-white mb-2">Processing</h3>
+                <p class="text-gray-400 text-sm">Crushing and concentration</p>
+            </div>
+
+            <div class="flex items-center justify-center text-gold-500 text-2xl mx-2">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+
+            <div class="flex-1 text-center">
+                <div class="relative inline-block">
+                    <div class="w-20 h-20 rounded-full bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center shadow-lg shadow-gold-500/30 mx-auto mb-6">
+                        <span class="text-white font-bold text-2xl">4</span>
+                    </div>
+                    <div class="absolute -top-1 -right-1 w-6 h-6 bg-gold-400 rounded-full flex items-center justify-center">
+                        <i class="fas fa-fire text-gray-900 text-xs"></i>
+                    </div>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-2">Smelting</h3>
+                <p class="text-gray-400 text-sm">Refining to ultimate purity</p>
+            </div>
+
+            <div class="flex items-center justify-center text-gold-500 text-2xl mx-2">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+
+            <div class="flex-1 text-center">
+                <div class="relative inline-block">
+                    <div class="w-20 h-20 rounded-full bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center shadow-lg shadow-gold-500/30 mx-auto mb-6">
+                        <span class="text-white font-bold text-2xl">5</span>
+                    </div>
+                    <div class="absolute -top-1 -right-1 w-6 h-6 bg-gold-400 rounded-full flex items-center justify-center">
+                        <i class="fas fa-globe text-gray-900 text-xs"></i>
+                    </div>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-2">Market</h3>
+                <p class="text-gray-400 text-sm">Global distribution network</p>
             </div>
         </div>
     </div>

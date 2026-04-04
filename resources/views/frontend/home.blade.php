@@ -3,34 +3,44 @@
 @section('title', 'Goldiva Minerals - Reliable Mineral Services in Uganda & Africa')
 
 @section('content')
-<section class="hero-bg min-h-screen flex items-center relative overflow-hidden border-b-4 border-gold-500">
+<section class="hero-bg min-h-screen flex items-center justify-center relative overflow-hidden">
     <div class="absolute inset-0" style="background-image: url('https://images.unsplash.com/photo-1610375461246-83df859d849d?w=1920'); background-size: cover; background-position: center;"></div>
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
-        <div class="flex">
-            <div class="w-full lg:w-3/5 bg-gray-900/80 backdrop-blur-sm rounded-r-3xl p-10 lg:p-16 flex flex-col justify-between" style="min-height: 600px;">
-                <div data-aos="fade-up">
-                    <h1 class="text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight mb-4">
-                        Reliable Mineral Services in <span class="text-gradient">Uganda & Africa</span>
-                    </h1>
-                    <p class="text-gray-300 text-lg mb-8">Your trusted partner for gold trading, smelting, and mineral consultancy</p>
-                    <div class="flex flex-wrap gap-4">
-                        <a href="{{ route('frontend.contact') }}" class="bg-white text-gray-900 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all shadow-lg flex items-center space-x-2">
-                            <span>Contact Us</span>
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
-                        <a href="{{ route('frontend.consulting') }}" class="btn-gold text-white px-8 py-4 rounded-full font-semibold shadow-lg flex items-center space-x-2">
-                            <i class="fas fa-chart-line"></i>
-                            <span>Get Consulting</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="text-center" data-aos="fade-up" data-aos-delay="200">
-                    <a href="#about" class="text-gold-400 animate-bounce inline-block">
-                        <i class="fas fa-chevron-down text-2xl"></i>
-                    </a>
-                </div>
+    <div class="absolute inset-0 bg-gray-900/75"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-gray-900/50"></div>
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gold-500/5 rounded-full blur-3xl"></div>
+    
+    <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="flex flex-col items-center" data-aos="fade-up">
+            <div class="inline-flex items-center gap-3 mb-8">
+                <div class="w-12 h-px bg-gradient-to-r from-transparent to-gold-500"></div>
+                <span class="text-gold-400 text-sm font-semibold uppercase tracking-[0.2em]">Welcome to</span>
+                <div class="w-12 h-px bg-gradient-to-l from-transparent to-gold-500"></div>
             </div>
-            <div class="hidden lg:block lg:w-2/5"></div>
+            
+            <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
+                <span class="text-gradient">Goldiva</span> Minerals
+            </h1>
+            
+            <p class="text-gray-300 text-lg md:text-xl max-w-2xl mb-10">
+                Your trusted partner for gold trading, smelting, and mineral consultancy across Uganda & Africa
+            </p>
+            
+            <div class="flex flex-wrap justify-center gap-4 mb-20">
+                <a href="{{ route('frontend.contact') }}" class="bg-white text-gray-900 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all shadow-lg shadow-white/10 flex items-center gap-2">
+                    <span>Contact Us</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="{{ route('frontend.consulting') }}" class="btn-gold text-white px-8 py-4 rounded-full font-semibold shadow-lg shadow-gold-500/20 flex items-center gap-2">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Get Consulting</span>
+                </a>
+            </div>
+            
+            <div class="absolute bottom-8 left-1/2 -translate-x-1/2" data-aos="fade-up" data-aos-delay="200">
+                <a href="#about" class="text-gold-400 animate-bounce inline-block">
+                    <i class="fas fa-chevron-down text-2xl"></i>
+                </a>
+            </div>
         </div>
     </div>
 </section>

@@ -3,15 +3,15 @@
 @section('title', 'Goldiva Minerals - Reliable Mineral Services in Uganda & Africa')
 
 @section('content')
-<section class="hero-bg min-h-[70vh] flex items-center relative overflow-hidden border-b-4 border-gold-500">
+<section class="hero-bg min-h-[85vh] flex items-center relative overflow-hidden border-b-4 border-gold-500">
     <div class="absolute inset-0 bg-gradient-to-r from-gray-900/90 to-transparent" style="background-image: url('https://images.unsplash.com/photo-1610375461246-83df859d849d?w=1920'); background-size: cover; background-position: center;"></div>
     <div class="absolute inset-0 bg-gradient-to-r from-gray-900/90 to-transparent"></div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
-        <div class="max-w-3xl fade-in">
-            <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight mb-6">
+        <div class="max-w-3xl text-left">
+            <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight mb-6" data-aos="fade-up">
                 Reliable Mineral Services in <span class="text-gradient">Uganda & Africa</span>
             </h1>
-            <div class="flex flex-wrap gap-4">
+            <div class="flex flex-wrap gap-4" data-aos="fade-up" data-aos-delay="200">
                 <a href="{{ route('frontend.contact') }}" class="bg-white text-gray-900 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all shadow-lg flex items-center space-x-2">
                     <span>Contact Us</span>
                     <i class="fas fa-arrow-right"></i>
@@ -28,7 +28,7 @@
 <section class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
+            <div data-aos="fade-right">
                 <span class="text-gold-600 font-semibold text-sm uppercase tracking-wider">About Goldiva Minerals</span>
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2 mb-6">Excellence in Mineral Services</h2>
                 <p class="text-gray-600 leading-relaxed mb-6">
@@ -45,7 +45,7 @@
                     </div>
                 </div>
             </div>
-            <div class="relative">
+            <div class="relative" data-aos="fade-left">
                 <div class="absolute -top-4 -left-4 w-72 h-72 bg-gold-200 rounded-full opacity-20 blur-3xl"></div>
                 <div class="absolute -bottom-4 -right-4 w-72 h-72 bg-gold-400 rounded-full opacity-20 blur-3xl"></div>
                 <img src="https://images.unsplash.com/photo-1610375461246-83df859d849d?w=600&h=400&fit=crop" alt="Mining Operations" class="rounded-3xl shadow-2xl w-full h-80 object-cover">
@@ -56,14 +56,14 @@
 
 <section class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
+        <div class="text-center mb-16" data-aos="fade-up">
             <span class="text-gold-600 font-semibold text-sm uppercase tracking-wider">What We Offer</span>
             <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2">Our Services</h2>
             <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Comprehensive mineral services tailored to meet your needs</p>
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div class="card-hover bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+            <div class="card-hover bg-white rounded-2xl p-8 shadow-lg border border-gray-100" data-aos="fade-up" data-aos-delay="100">
                 <div class="w-16 h-16 gradient-gold rounded-2xl flex items-center justify-center mb-6 shadow-lg">
                     <i class="fas fa-coins text-white text-2xl"></i>
                 </div>
@@ -71,7 +71,7 @@
                 <p class="text-gray-600">Expert gold trading services with competitive rates and secure transactions across Uganda and Africa.</p>
             </div>
 
-            <div class="card-hover bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+            <div class="card-hover bg-white rounded-2xl p-8 shadow-lg border border-gray-100" data-aos="fade-up" data-aos-delay="200">
                 <div class="w-16 h-16 gradient-gold rounded-2xl flex items-center justify-center mb-6 shadow-lg">
                     <i class="fas fa-fire text-white text-2xl"></i>
                 </div>
@@ -79,7 +79,7 @@
                 <p class="text-gray-600">Professional smelting services ensuring the highest purity levels for your gold and mineral products.</p>
             </div>
 
-            <div class="card-hover bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+            <div class="card-hover bg-white rounded-2xl p-8 shadow-lg border border-gray-100" data-aos="fade-up" data-aos-delay="300">
                 <div class="w-16 h-16 gradient-gold rounded-2xl flex items-center justify-center mb-6 shadow-lg">
                     <i class="fas fa-file-alt text-white text-2xl"></i>
                 </div>
@@ -87,7 +87,7 @@
                 <p class="text-gray-600">Complete documentation services including export/import permits, assays, and regulatory compliance.</p>
             </div>
 
-            <div class="card-hover bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+            <div class="card-hover bg-white rounded-2xl p-8 shadow-lg border border-gray-100" data-aos="fade-up" data-aos-delay="400">
                 <div class="w-16 h-16 gradient-gold rounded-2xl flex items-center justify-center mb-6 shadow-lg">
                     <i class="fas fa-headset text-white text-2xl"></i>
                 </div>
@@ -96,7 +96,7 @@
             </div>
         </div>
 
-        <div class="text-center mt-12">
+        <div class="text-center mt-12" data-aos="fade-up">
             <a href="{{ route('frontend.services') }}" class="inline-flex items-center text-gold-600 font-semibold hover:text-gold-700 transition-colors">
                 <span>View All Services</span>
                 <i class="fas fa-arrow-right ml-2"></i>
@@ -111,11 +111,11 @@
         <div class="absolute bottom-0 right-0 w-96 h-96 bg-gold-500 rounded-full blur-3xl"></div>
     </div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="text-center mb-8">
+        <div class="text-center mb-8" data-aos="fade-up">
             <h2 class="text-3xl md:text-4xl font-bold text-white mb-3">Ready to Get Started?</h2>
             <p class="text-gray-300 max-w-xl mx-auto">Whether you need to buy or sell gold, require smelting services, or need expert consultancy, we're here to help.</p>
         </div>
-        <div class="flex flex-wrap justify-center gap-4">
+        <div class="flex flex-wrap justify-center gap-4" data-aos="fade-up" data-aos-delay="200">
             <a href="{{ route('frontend.contact') }}" class="bg-white text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all shadow-lg flex items-center space-x-2">
                 <span>Contact Us</span>
                 <i class="fas fa-arrow-right"></i>
@@ -130,14 +130,14 @@
 
 <section class="py-16 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
+        <div class="text-center mb-12" data-aos="fade-up">
             <span class="text-gold-600 font-semibold text-sm uppercase tracking-wider">Why Choose Us</span>
             <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2">The Goldiva Advantage</h2>
             <p class="text-gray-600 mt-4 max-w-2xl mx-auto">What sets us apart in the mineral services industry</p>
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div class="card-hover bg-white rounded-2xl p-8 shadow-lg border border-gray-100 text-center">
+            <div class="card-hover bg-white rounded-2xl p-8 shadow-lg border border-gray-100 text-center" data-aos="fade-up" data-aos-delay="100">
                 <div class="w-16 h-16 gradient-gold rounded-full flex items-center justify-center mb-6 shadow-lg mx-auto">
                     <i class="fas fa-gem text-white text-2xl"></i>
                 </div>
@@ -145,7 +145,7 @@
                 <p class="text-gray-600">Deep knowledge and years of experience in gold and mineral services across Africa.</p>
             </div>
 
-            <div class="card-hover bg-white rounded-2xl p-8 shadow-lg border border-gray-100 text-center">
+            <div class="card-hover bg-white rounded-2xl p-8 shadow-lg border border-gray-100 text-center" data-aos="fade-up" data-aos-delay="200">
                 <div class="w-16 h-16 gradient-gold rounded-full flex items-center justify-center mb-6 shadow-lg mx-auto">
                     <i class="fas fa-handshake text-white text-2xl"></i>
                 </div>
@@ -153,7 +153,7 @@
                 <p class="text-gray-600">Building lasting relationships with transparent and reliable mineral transactions.</p>
             </div>
 
-            <div class="card-hover bg-white rounded-2xl p-8 shadow-lg border border-gray-100 text-center">
+            <div class="card-hover bg-white rounded-2xl p-8 shadow-lg border border-gray-100 text-center" data-aos="fade-up" data-aos-delay="300">
                 <div class="w-16 h-16 gradient-gold rounded-full flex items-center justify-center mb-6 shadow-lg mx-auto">
                     <i class="fas fa-shield-alt text-white text-2xl"></i>
                 </div>
@@ -161,7 +161,7 @@
                 <p class="text-gray-600">Full adherence to regulations with proper documentation and regulatory compliance.</p>
             </div>
 
-            <div class="card-hover bg-white rounded-2xl p-8 shadow-lg border border-gray-100 text-center">
+            <div class="card-hover bg-white rounded-2xl p-8 shadow-lg border border-gray-100 text-center" data-aos="fade-up" data-aos-delay="400">
                 <div class="w-16 h-16 gradient-gold rounded-full flex items-center justify-center mb-6 shadow-lg mx-auto">
                     <i class="fas fa-headset text-white text-2xl"></i>
                 </div>
@@ -184,51 +184,55 @@
             <p class="text-gray-400 mt-4 max-w-2xl mx-auto">Our streamlined process ensures maximum value at every stage</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div class="bg-gradient-to-br from-gray-900 to-gray-800 border border-gold-500/30 rounded-2xl p-8 text-center hover:border-gold-500/60 transition-all duration-300 hover:shadow-xl hover:shadow-gold-500/10">
-                <div class="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-yellow-400 to-amber-600 mb-4">1</div>
-                <div class="w-14 h-14 bg-gradient-to-br from-gold-400/20 to-gold-600/20 rounded-xl flex items-center justify-center mx-auto mb-4 border border-gold-500/30">
-                    <i class="fas fa-hammer text-gold-400 text-xl"></i>
+        <div class="flex justify-between items-start gap-4">
+            <div class="flex-1 bg-gradient-to-br from-gray-900 to-gray-800 border border-gold-500/30 rounded-2xl p-6 text-center hover:border-gold-500/60 transition-all duration-300 hover:shadow-xl hover:shadow-gold-500/10" data-aos="fade-up" data-aos-delay="100">
+                <div class="w-16 h-16 bg-gradient-to-br from-gold-400 to-gold-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg shadow-gold-500/30">
+                    <i class="fas fa-hammer text-white text-2xl"></i>
                 </div>
-                <h3 class="text-xl font-bold text-white mb-3">Site Operations & Extraction</h3>
-                <div class="w-12 h-0.5 bg-gradient-to-r from-transparent via-gold-500 to-transparent mx-auto mb-3"></div>
-                <p class="text-gray-400 text-sm">Professional mining and extraction operations with state-of-the-art equipment</p>
+                <h3 class="text-lg font-bold text-white mb-2">Extraction Process</h3>
+                <p class="text-gray-400 text-sm">Professional mining and extraction</p>
             </div>
 
-            <div class="bg-gradient-to-br from-gray-900 to-gray-800 border border-gold-500/30 rounded-2xl p-8 text-center hover:border-gold-500/60 transition-all duration-300 hover:shadow-xl hover:shadow-gold-500/10">
-                <div class="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-yellow-400 to-amber-600 mb-4">2</div>
-                <div class="w-14 h-14 bg-gradient-to-br from-gold-400/20 to-gold-600/20 rounded-xl flex items-center justify-center mx-auto mb-4 border border-gold-500/30">
-                    <i class="fas fa-cogs text-gold-400 text-xl"></i>
-                </div>
-                <h3 class="text-xl font-bold text-white mb-3">Initial Processing</h3>
-                <div class="w-12 h-0.5 bg-gradient-to-r from-transparent via-gold-500 to-transparent mx-auto mb-3"></div>
-                <p class="text-gray-400 text-sm">Crushing, grinding, and concentration to prepare ore for gold recovery</p>
+            <div class="flex items-center justify-center text-gold-500 text-2xl">
+                <i class="fas fa-arrow-right"></i>
             </div>
 
-            <div class="bg-gradient-to-br from-gray-900 to-gray-800 border border-gold-500/30 rounded-2xl p-8 text-center hover:border-gold-500/60 transition-all duration-300 hover:shadow-xl hover:shadow-gold-500/10">
-                <div class="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-yellow-400 to-amber-600 mb-4">3</div>
-                <div class="w-14 h-14 bg-gradient-to-br from-gold-400/20 to-gold-600/20 rounded-xl flex items-center justify-center mx-auto mb-4 border border-gold-500/30">
-                    <i class="fas fa-vial text-gold-400 text-xl"></i>
+            <div class="flex-1 bg-gradient-to-br from-gray-900 to-gray-800 border border-gold-500/30 rounded-2xl p-6 text-center hover:border-gold-500/60 transition-all duration-300 hover:shadow-xl hover:shadow-gold-500/10" data-aos="fade-up" data-aos-delay="200">
+                <div class="w-16 h-16 bg-gradient-to-br from-gold-400 to-gold-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg shadow-gold-500/30">
+                    <i class="fas fa-cogs text-white text-2xl"></i>
                 </div>
-                <h3 class="text-xl font-bold text-white mb-3">Gold Recovery Process</h3>
-                <div class="w-12 h-0.5 bg-gradient-to-r from-transparent via-gold-500 to-transparent mx-auto mb-3"></div>
-                <p class="text-gray-400 text-sm">Advanced recovery techniques with precision assaying for guaranteed purity</p>
+                <h3 class="text-lg font-bold text-white mb-2">Processing</h3>
+                <p class="text-gray-400 text-sm">Crushing and concentration</p>
             </div>
 
-            <div class="bg-gradient-to-br from-gray-900 to-gray-800 border border-gold-500/30 rounded-2xl p-8 text-center hover:border-gold-500/60 transition-all duration-300 hover:shadow-xl hover:shadow-gold-500/10">
-                <div class="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-yellow-400 to-amber-600 mb-4">4</div>
-                <div class="w-14 h-14 bg-gradient-to-br from-gold-400/20 to-gold-600/20 rounded-xl flex items-center justify-center mx-auto mb-4 border border-gold-500/30">
-                    <i class="fas fa-file-signature text-gold-400 text-xl"></i>
+            <div class="flex items-center justify-center text-gold-500 text-2xl">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+
+            <div class="flex-1 bg-gradient-to-br from-gray-900 to-gray-800 border border-gold-500/30 rounded-2xl p-6 text-center hover:border-gold-500/60 transition-all duration-300 hover:shadow-xl hover:shadow-gold-500/10" data-aos="fade-up" data-aos-delay="300">
+                <div class="w-16 h-16 bg-gradient-to-br from-gold-400 to-gold-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg shadow-gold-500/30">
+                    <i class="fas fa-vial text-white text-2xl"></i>
                 </div>
-                <h3 class="text-xl font-bold text-white mb-3">Production & Documentation</h3>
-                <div class="w-12 h-0.5 bg-gradient-to-r from-transparent via-gold-500 to-transparent mx-auto mb-3"></div>
-                <p class="text-gray-400 text-sm">Complete documentation and legal export procedures for international markets</p>
+                <h3 class="text-lg font-bold text-white mb-2">Recovery</h3>
+                <p class="text-gray-400 text-sm">Gold recovery and assaying</p>
+            </div>
+
+            <div class="flex items-center justify-center text-gold-500 text-2xl">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+
+            <div class="flex-1 bg-gradient-to-br from-gray-900 to-gray-800 border border-gold-500/30 rounded-2xl p-6 text-center hover:border-gold-500/60 transition-all duration-300 hover:shadow-xl hover:shadow-gold-500/10" data-aos="fade-up" data-aos-delay="400">
+                <div class="w-16 h-16 bg-gradient-to-br from-gold-400 to-gold-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg shadow-gold-500/30">
+                    <i class="fas fa-file-signature text-white text-2xl"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-2">Documentation</h3>
+                <p class="text-gray-400 text-sm">Legal export and compliance</p>
             </div>
         </div>
     </div>
 </section>
 
-<section class="py-16 bg-white">
+<section class="py-16 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
             <span class="text-gold-600 font-semibold text-sm uppercase tracking-wider">Testimonials</span>

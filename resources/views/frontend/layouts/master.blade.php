@@ -6,6 +6,8 @@
     <title>@yield('title', 'Goldiva Minerals')</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         tailwind.config = {
             theme: {
@@ -64,6 +66,10 @@
                     <a href="{{ route('frontend.services') }}" class="nav-link text-gray-700 hover:text-gold-600 font-medium">Services</a>
                     <a href="{{ route('frontend.products') }}" class="nav-link text-gray-700 hover:text-gold-600 font-medium">Products</a>
                     <a href="{{ route('frontend.contact') }}" class="nav-link text-gray-700 hover:text-gold-600 font-medium">Contact</a>
+                    <div class="relative">
+                        <input type="text" placeholder="Search..." class="w-40 pl-10 pr-4 py-2 text-sm border border-gray-200 rounded-full focus:outline-none focus:border-gold-500 focus:ring-2 focus:ring-gold-500/20 transition-all">
+                        <i class="fas fa-search absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                    </div>
                     <a href="{{ route('frontend.consulting') }}" class="btn-gold text-white px-6 py-2.5 rounded-full font-semibold shadow-lg flex items-center space-x-2">
                         <i class="fas fa-chart-line"></i>
                         <span>Get Consulting</span>
@@ -180,6 +186,13 @@
             } else {
                 navbar.classList.remove('shadow-xl');
             }
+        });
+
+        AOS.init({
+            duration: 600,
+            easing: 'ease-out',
+            once: true,
+            offset: 50
         });
     </script>
 </body>

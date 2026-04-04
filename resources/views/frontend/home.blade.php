@@ -3,7 +3,39 @@
 @section('title', 'Goldiva Minerals - Reliable Mineral Services in Uganda & Africa')
 
 @section('content')
-<section class="hero-bg min-h-[80vh] flex items-center justify-center relative overflow-hidden">
+<section class="bg-gray-900 py-4 border-b border-gold-500/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-wrap items-center justify-center gap-8 md:gap-16">
+            <div class="text-center">
+                <span class="text-gray-400 text-xs uppercase tracking-wider">Live Market Prices</span>
+                <div class="flex items-center gap-3 mt-1">
+                    <i class="fas fa-coins text-gold-400 text-lg"></i>
+                    <span class="text-white font-bold text-lg">Gold</span>
+                    <span class="text-gold-400 font-bold text-xl">$3,350<span class="text-sm">/oz</span></span>
+                </div>
+            </div>
+            <div class="hidden md:block w-px h-10 bg-gray-700"></div>
+            <div class="text-center">
+                <span class="text-gray-400 text-xs uppercase tracking-wider">Spot Price</span>
+                <div class="flex items-center gap-3 mt-1">
+                    <i class="fas fa-ring text-gray-300 text-lg"></i>
+                    <span class="text-white font-bold text-lg">Silver</span>
+                    <span class="text-gray-300 font-bold text-xl">$28.50<span class="text-sm">/oz</span></span>
+                </div>
+            </div>
+            <div class="hidden md:block w-px h-10 bg-gray-700"></div>
+            <div class="text-center">
+                <span class="text-gray-400 text-xs uppercase tracking-wider">24h Change</span>
+                <div class="flex items-center gap-2 mt-1">
+                    <i class="fas fa-arrow-up text-green-400"></i>
+                    <span class="text-green-400 font-bold text-xl">+0.50%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hero-bg min-h-[82vh] flex items-center justify-center relative overflow-hidden">
     <div class="absolute inset-0" style="background-image: url('https://images.unsplash.com/photo-1610375461246-83df859d849d?w=1920'); background-size: cover; background-position: center;"></div>
     <div class="absolute inset-0 bg-gray-900/75"></div>
     <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-gray-900/50"></div>
@@ -25,7 +57,7 @@
                 Your trusted partner for gold trading, smelting, and mineral consultancy across Uganda & Africa
             </p>
             
-            <div class="flex flex-wrap justify-center gap-4 mb-20">
+            <div class="flex flex-wrap justify-center gap-4">
                 <a href="{{ route('frontend.contact') }}" class="bg-white text-gray-900 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all shadow-lg shadow-white/10 flex items-center gap-2">
                     <span>Contact Us</span>
                     <i class="fas fa-arrow-right"></i>
@@ -35,11 +67,65 @@
                     <span>Get Consulting</span>
                 </a>
             </div>
-            
-            <div class="absolute bottom-20 left-1/2 -translate-x-1/2" data-aos="fade-up" data-aos-delay="200">
-                <a href="#about" class="text-gold-400 animate-bounce inline-block">
-                    <i class="fas fa-chevron-down text-2xl"></i>
-                </a>
+        </div>
+    </div>
+</section>
+
+<section class="py-16 bg-gray-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12" data-aos="fade-up">
+            <span class="text-gold-400 font-semibold text-sm uppercase tracking-wider">Our Operations</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-white mt-2">In Action</h2>
+            <p class="text-gray-400 mt-3">See our operations across Uganda and Africa</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="group relative overflow-hidden rounded-2xl" data-aos="fade-up" data-aos-delay="100">
+                <img src="https://images.unsplash.com/photo-1610375461246-83df859d849d?w=600&h=400&fit=crop" alt="Gold Mining" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-80"></div>
+                <div class="absolute bottom-4 left-4">
+                    <h3 class="text-white font-bold text-lg">Gold Mining Operations</h3>
+                    <p class="text-gold-400 text-sm">Karamoja Region</p>
+                </div>
+            </div>
+            <div class="group relative overflow-hidden rounded-2xl" data-aos="fade-up" data-aos-delay="200">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop" alt="Smelting Process" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-80"></div>
+                <div class="absolute bottom-4 left-4">
+                    <h3 class="text-white font-bold text-lg">Smelting Process</h3>
+                    <p class="text-gold-400 text-sm">High-Purity Refining</p>
+                </div>
+            </div>
+            <div class="group relative overflow-hidden rounded-2xl" data-aos="fade-up" data-aos-delay="300">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop" alt="Mineral Exploration" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-80"></div>
+                <div class="absolute bottom-4 left-4">
+                    <h3 class="text-white font-bold text-lg">Mineral Exploration</h3>
+                    <p class="text-gold-400 text-sm">Expert Analysis</p>
+                </div>
+            </div>
+            <div class="group relative overflow-hidden rounded-2xl" data-aos="fade-up" data-aos-delay="400">
+                <img src="https://images.unsplash.com/photo-1581093458791-9d42e3c2fd32?w=600&h=400&fit=crop" alt="Laboratory Testing" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-80"></div>
+                <div class="absolute bottom-4 left-4">
+                    <h3 class="text-white font-bold text-lg">Quality Assurance</h3>
+                    <p class="text-gold-400 text-sm">Lab Testing & Certification</p>
+                </div>
+            </div>
+            <div class="group relative overflow-hidden rounded-2xl" data-aos="fade-up" data-aos-delay="500">
+                <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=600&h=400&fit=crop" alt="Trading Floor" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-80"></div>
+                <div class="absolute bottom-4 left-4">
+                    <h3 class="text-white font-bold text-lg">Global Trading</h3>
+                    <p class="text-gold-400 text-sm">Secure Transactions</p>
+                </div>
+            </div>
+            <div class="group relative overflow-hidden rounded-2xl" data-aos="fade-up" data-aos-delay="600">
+                <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=600&h=400&fit=crop" alt="African Operations" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-80"></div>
+                <div class="absolute bottom-4 left-4">
+                    <h3 class="text-white font-bold text-lg">African Operations</h3>
+                    <p class="text-gold-400 text-sm">Pan-African Presence</p>
+                </div>
             </div>
         </div>
     </div>

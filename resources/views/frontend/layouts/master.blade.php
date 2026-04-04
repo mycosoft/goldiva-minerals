@@ -114,17 +114,7 @@
                             <p class="text-xs text-gold-300 -mt-1">Minerals</p>
                         </div>
                     </div>
-                    <p class="text-gray-400 leading-relaxed mb-6">Your trusted partner for mineral services in Uganda and across Africa. We deliver excellence in gold trading, smelting, and consultancy.</p>
-                    <div class="flex flex-col space-y-3">
-                        <a href="https://wa.me/256700123456" class="bg-green-500 text-white px-5 py-2.5 rounded-full font-semibold hover:bg-green-600 transition-all flex items-center space-x-2 shadow-lg w-fit">
-                            <i class="fab fa-whatsapp text-lg"></i>
-                            <span>Chat on WhatsApp</span>
-                        </a>
-                        <a href="mailto:info@goldivaminerals.com" class="bg-gold-500 text-white px-5 py-2.5 rounded-full font-semibold hover:bg-gold-600 transition-all flex items-center space-x-2 shadow-lg w-fit">
-                            <i class="fas fa-envelope text-lg"></i>
-                            <span>info@goldivaminerals.com</span>
-                        </a>
-                    </div>
+                    <p class="text-gray-400 leading-relaxed">Your trusted partner for mineral services in Uganda and across Africa. We deliver excellence in gold trading, smelting, and consultancy.</p>
                 </div>
 
                 <div>

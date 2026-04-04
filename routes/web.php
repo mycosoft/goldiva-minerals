@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\BlogController;
 use App\Http\Controllers\Admin\ContactController;
 use App\Http\Controllers\Admin\GalleryController;
 use App\Http\Controllers\Admin\HomeController;
+use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\RoleController;
 use App\Http\Controllers\Admin\ServiceController;
 use App\Http\Controllers\Admin\UserController;
@@ -22,6 +23,7 @@ Route::prefix('admin')->name('admin.')->middleware(['auth', 'role:admin|site man
     Route::resource('services', ServiceController::class);
     Route::resource('galleries', GalleryController::class);
     Route::resource('contacts', ContactController::class);
+    Route::resource('products', ProductController::class);
 
     Route::middleware(['role:admin'])->group(function () {
         Route::resource('users', UserController::class);

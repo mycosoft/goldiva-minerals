@@ -31,6 +31,10 @@ class RolesAndPermissionsSeeder extends Seeder
             'delete users',
             'view roles',
             'manage roles',
+            'view products',
+            'create products',
+            'edit products',
+            'delete products',
         ];
 
         foreach ($permissions as $permission) {
@@ -56,6 +60,10 @@ class RolesAndPermissionsSeeder extends Seeder
             'delete galleries',
             'view contacts',
             'delete contacts',
+            'view products',
+            'create products',
+            'edit products',
+            'delete products',
         ]);
     }
 }

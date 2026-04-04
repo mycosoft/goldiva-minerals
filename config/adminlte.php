@@ -164,7 +164,7 @@ return [
     'layout_boxed' => null,
     'layout_fixed_sidebar' => null,
     'layout_fixed_navbar' => null,
-    'layout_fixed_footer' => null,
+    'layout_fixed_footer' => true,
     'layout_dark_mode' => null,
 
     /*
@@ -316,6 +316,13 @@ return [
             'type' => 'fullscreen-widget',
             'topnav_right' => true,
         ],
+        [
+            'text' => 'Visit Site',
+            'url' => '/',
+            'target' => '_blank',
+            'icon' => 'fas fa-external-link-alt',
+            'topnav_right' => true,
+        ],
 
         [
             'text' => 'Dashboard',
@@ -342,6 +349,12 @@ return [
             'url' => 'admin/galleries',
             'icon' => 'fas fa-images',
             'can' => 'view galleries',
+        ],
+        [
+            'text' => 'Products',
+            'url' => 'admin/products',
+            'icon' => 'fas fa-box-open',
+            'can' => 'view products',
         ],
         [
             'text' => 'Contact Messages',

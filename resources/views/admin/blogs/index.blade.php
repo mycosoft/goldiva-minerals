@@ -12,9 +12,17 @@
 @section('content')
     <div class="card">
         <div class="card-header">
-            <form method="GET" class="d-flex">
+            <form method="GET" class="d-flex flex-wrap gap-2">
                 <input type="text" name="search" class="form-control" placeholder="Search blogs..." value="{{ request('search') }}">
-                <button type="submit" class="btn btn-secondary ml-2">Search</button>
+                <select name="category" class="form-control">
+                    <option value="">All Categories</option>
+                    @foreach($categories as $category)
+                        <option value="{{ $category->id }}" {{ request('category') == $category->id ? 'selected' : '' }}>
+                            {{ $category->name }}
+                        </option>
+                    @endforeach
+                </select>
+                <button type="submit" class="btn btn-secondary">Filter</button>
             </form>
         </div>
         <div class="card-body table-responsive">
@@ -24,9 +32,10 @@
                         <th>ID</th>
                         <th>Image</th>
                         <th>Title</th>
-                        <th>Slug</th>
-                        <th>Status</th>
+                        <th>Category</th>
                         <th>Author</th>
+                        <th>Status</th>
+                        <th>Published</th>
                         <th>Created</th>
                         <th>Actions</th>
                     </tr>
@@ -43,7 +52,14 @@
                             @endif
                         </td>
                         <td>{{ $blog->title }}</td>
-                        <td>{{ $blog->slug }}</td>
+                        <td>
+                            @if($blog->category)
+                                <span class="badge badge-info">{{ $blog->category->name }}</span>
+                            @else
+                                <span class="text-muted">Uncategorized</span>
+                            @endif
+                        </td>
+                        <td>{{ $blog->user->name ?? 'N/A' }}</td>
                         <td>
                             @if($blog->status)
                                 <span class="badge badge-success">Active</span>
@@ -51,7 +67,13 @@
                                 <span class="badge badge-secondary">Inactive</span>
                             @endif
                         </td>
-                        <td>{{ $blog->user->name ?? 'N/A' }}</td>
+                        <td>
+                            @if($blog->published_at)
+                                {{ $blog->published_at->format('Y-m-d') }}
+                            @else
+                                <span class="text-muted">Draft</span>
+                            @endif
+                        </td>
                         <td>{{ $blog->created_at->format('Y-m-d') }}</td>
                         <td>
                             <div class="btn-group">
@@ -66,7 +88,7 @@
                     </tr>
                     @empty
                     <tr>
-                        <td colspan="8" class="text-center">No blogs found.</td>
+                        <td colspan="9" class="text-center">No blogs found.</td>
                     </tr>
                     @endforelse
                 </tbody>

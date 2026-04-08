@@ -1,6 +1,27 @@
 @extends('frontend.layouts.master')
 
-@section('title', 'Request a Consultation - Goldiva Minerals')
+@section('title', 'Mineral Consultancy Services - Expert Mining Advisory | Goldiva Minerals')
+@section('meta_title', 'Mineral Consultancy Services - Expert Mining Advisory | Goldiva Minerals')
+@section('meta_description', 'Get expert mineral consultancy services from Goldiva Minerals. Advisory for mining operations, investment decisions, documentation, and industry best practices. Request a consultation today.')
+@section('meta_keywords', 'mineral consultancy, mining advisory services, gold investment advice, mineral documentation, mining consultation Uganda, Africa mineral services')
+@section('og_title', 'Mineral Consultancy Services | Goldiva Minerals')
+@section('og_description', 'Expert advisory services for mining operations, investment decisions, and industry best practices.')
+@section('og_image', asset('images/mining-process.png'))
+
+@section('schema_markup')
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Mineral Consultancy",
+    "provider": {
+        "@type": "Organization",
+        "name": "Goldiva Minerals"
+    },
+    "description": "Expert advisory services for mining operations, investment decisions, and industry best practices"
+}
+</script>
+@endsection
 
 @section('content')
 <!-- Hero Section -->

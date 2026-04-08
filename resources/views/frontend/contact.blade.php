@@ -1,13 +1,40 @@
 @extends('frontend.layouts.master')
 
-@section('title', 'Contact Us - Goldiva Minerals')
+@section('title', 'Contact Us - Get In Touch | Goldiva Minerals Uganda')
+@section('meta_title', 'Contact Goldiva Minerals - Gold Trading & Mineral Services in Uganda')
+@section('meta_description', 'Contact Goldiva Minerals for gold trading, smelting, documentation, and mineral consultancy services. Located in Kololo, Kampala, Uganda. Call +256 790 342621 or email support@goldivaminerals.com')
+@section('meta_keywords', 'contact Goldiva Minerals, gold trading contact, mineral services Uganda, Kampala minerals, Uganda gold company contact')
+@section('og_title', 'Contact Us - Goldiva Minerals')
+@section('og_description', 'Get in touch with Goldiva Minerals. Located in Kololo, Kampala, Uganda. Email: support@goldivaminerals.com')
+@section('og_image', asset('images/hero1.jpeg'))
+
+@section('schema_markup')
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "mainEntity": {
+        "@type": "Organization",
+        "name": "Goldiva Minerals",
+        "telephone": "+256-790-342621",
+        "email": "support@goldivaminerals.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Kololo",
+            "addressLocality": "Kampala",
+            "addressCountry": "UG"
+        }
+    }
+}
+</script>
+@endsection
 
 @section('content')
 <!-- Hero Section -->
 <section class="pt-32 pb-20 hero-bg">
-    <div class="max-w-7xl mx-auto px-4 text-center text-white fade-in">
-        <h1 class="text-5xl md:text-6xl font-bold mb-6">Contact <span class="text-gradient">Us</span></h1>
-        <p class="text-xl text-gray-300 max-w-3xl mx-auto">We'd love to hear from you. Reach out for inquiries, partnerships, or consultations.</p>
+    <div class="max-w-7xl mx-auto px-4 text-center text-white">
+        <h1 class="text-5xl md:text-6xl font-bold mb-6" data-aos="fade-up">Contact <span class="text-gradient">Us</span></h1>
+        <p class="text-xl text-gray-300 max-w-3xl mx-auto" data-aos="fade-up">We'd love to hear from you. Reach out for inquiries, partnerships, or consultations.</p>
     </div>
 </section>
 
@@ -16,13 +43,14 @@
     <div class="max-w-7xl mx-auto px-4">
         <div class="grid lg:grid-cols-2 gap-16">
             <!-- Contact Info -->
-            <div>
-                <h2 class="text-4xl font-bold text-gray-900 mb-8">Get In Touch</h2>
+            <div data-aos="fade-right">
+                <span class="text-gold-600 font-semibold text-sm uppercase tracking-wider">Get In Touch</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gold-600 mt-3 mb-8">Contact Information</h2>
                 
                 <div class="space-y-6">
                     <div class="flex items-start">
-                        <div class="w-14 h-14 bg-gold-100 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
-                            <i class="fas fa-building text-2xl text-gold-600"></i>
+                        <div class="w-14 h-14 gradient-gold rounded-xl flex items-center justify-center mr-4 flex-shrink-0 shadow-lg">
+                            <i class="fas fa-building text-2xl text-white"></i>
                         </div>
                         <div>
                             <h3 class="text-xl font-bold text-gray-900 mb-1">Company</h3>
@@ -31,22 +59,42 @@
                     </div>
 
                     <div class="flex items-start">
-                        <div class="w-14 h-14 bg-gold-100 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
-                            <i class="fas fa-envelope text-2xl text-gold-600"></i>
+                        <div class="w-14 h-14 gradient-gold rounded-xl flex items-center justify-center mr-4 flex-shrink-0 shadow-lg">
+                            <i class="fas fa-envelope text-2xl text-white"></i>
                         </div>
                         <div>
                             <h3 class="text-xl font-bold text-gray-900 mb-1">Email</h3>
-                            <p class="text-gray-600">support@goldivaminerals.com</p>
+                            <a href="mailto:support@goldivaminerals.com" class="text-gray-600 hover:text-gold-600 transition-colors">support@goldivaminerals.com</a>
                         </div>
                     </div>
 
                     <div class="flex items-start">
-                        <div class="w-14 h-14 bg-gold-100 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
-                            <i class="fas fa-map-marker-alt text-2xl text-gold-600"></i>
+                        <div class="w-14 h-14 gradient-gold rounded-xl flex items-center justify-center mr-4 flex-shrink-0 shadow-lg">
+                            <i class="fas fa-phone text-2xl text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-1">Phone</h3>
+                            <a href="tel:+256790342621" class="text-gray-600 hover:text-gold-600 transition-colors">+256 790 342621</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="w-14 h-14 gradient-gold rounded-xl flex items-center justify-center mr-4 flex-shrink-0 shadow-lg">
+                            <i class="fas fa-map-marker-alt text-2xl text-white"></i>
                         </div>
                         <div>
                             <h3 class="text-xl font-bold text-gray-900 mb-1">Location</h3>
-                            <p class="text-gray-600">Uganda, East Africa</p>
+                            <p class="text-gray-600">Kololo, Kampala, Uganda</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="w-14 h-14 gradient-gold rounded-xl flex items-center justify-center mr-4 flex-shrink-0 shadow-lg">
+                            <i class="fas fa-globe text-2xl text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-1">Website</h3>
+                            <a href="https://www.goldivaminerals.com" target="_blank" class="text-gray-600 hover:text-gold-600 transition-colors">www.goldivaminerals.com</a>
                         </div>
                     </div>
                 </div>
@@ -54,16 +102,16 @@
                 <div class="mt-12">
                     <h3 class="text-xl font-bold text-gray-900 mb-4">Connect With Us</h3>
                     <div class="flex space-x-4">
-                        <a href="#" class="w-12 h-12 bg-gold-500 text-white rounded-full flex items-center justify-center hover:bg-gold-600 transition-all">
+                        <a href="#" class="w-12 h-12 gradient-gold text-white rounded-full flex items-center justify-center shadow-lg hover:opacity-90 transition-all">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="#" class="w-12 h-12 bg-gold-500 text-white rounded-full flex items-center justify-center hover:bg-gold-600 transition-all">
+                        <a href="#" class="w-12 h-12 gradient-gold text-white rounded-full flex items-center justify-center shadow-lg hover:opacity-90 transition-all">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="#" class="w-12 h-12 bg-gold-500 text-white rounded-full flex items-center justify-center hover:bg-gold-600 transition-all">
+                        <a href="#" class="w-12 h-12 gradient-gold text-white rounded-full flex items-center justify-center shadow-lg hover:opacity-90 transition-all">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a href="#" class="w-12 h-12 bg-gold-500 text-white rounded-full flex items-center justify-center hover:bg-gold-600 transition-all">
+                        <a href="https://wa.me/256790342621" target="_blank" class="w-12 h-12 gradient-gold text-white rounded-full flex items-center justify-center shadow-lg hover:opacity-90 transition-all">
                             <i class="fab fa-whatsapp"></i>
                         </a>
                     </div>
@@ -71,8 +119,9 @@
             </div>
 
             <!-- Contact Form -->
-            <div class="bg-gray-50 rounded-2xl p-8">
-                <h2 class="text-2xl font-bold text-gray-900 mb-6">Send Us a Message</h2>
+            <div class="bg-gray-50 rounded-2xl p-8" data-aos="fade-left">
+                <span class="text-gold-600 font-semibold text-sm uppercase tracking-wider">Send Message</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gold-600 mt-3 mb-6">Get In Touch</h2>
                 <form action="#" method="POST">
                     @csrf
                     <div class="space-y-6">

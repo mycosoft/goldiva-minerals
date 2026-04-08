@@ -3,7 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'Goldiva Minerals')</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>@yield('title', 'Goldiva Minerals - Gold Trading, Smelting & Mineral Consultancy in Uganda')</title>
+    <meta name="title" content="@yield('meta_title', 'Goldiva Minerals - Gold Trading, Smelting & Mineral Consultancy in Uganda')">
+    <meta name="description" content="@yield('meta_description', 'Goldiva Minerals is a premier mineral services company in Uganda offering gold trading, smelting, documentation, and mineral consultancy services across Africa. Trusted partner for miners and investors.')">
+    <meta name="keywords" content="@yield('meta_keywords', 'gold trading Uganda, gold smelting Africa, mineral consultancy, gold doré, processed gold, mineral documentation, Uganda minerals, gold export, mineral services Africa')">
+    <meta name="author" content="Goldiva Minerals">
+    <meta name="robots" content="@yield('robots', 'index, follow')">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <link rel="canonical" href="@yield('canonical_url', url()->current())">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="@yield('og_url', url()->current())">
+    <meta property="og:title" content="@yield('og_title', 'Goldiva Minerals - Gold Trading, Smelting & Mineral Consultancy in Uganda')">
+    <meta property="og:description" content="@yield('og_description', 'Goldiva Minerals is a premier mineral services company in Uganda offering gold trading, smelting, documentation, and mineral consultancy services across Africa.')">
+    <meta property="og:image" content="@yield('og_image', asset('images/hero1.jpeg'))">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Goldiva Minerals">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="@yield('twitter_url', url()->current())">
+    <meta name="twitter:title" content="@yield('twitter_title', 'Goldiva Minerals - Gold Trading, Smelting & Mineral Consultancy in Uganda')">
+    <meta name="twitter:description" content="@yield('twitter_description', 'Goldiva Minerals is a premier mineral services company in Uganda offering gold trading, smelting, documentation, and mineral consultancy services across Africa.')">
+    <meta name="twitter:image" content="@yield('twitter_image', asset('images/hero1.jpeg'))">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/hero1.jpeg') }}">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Goldiva Minerals",
+        "alternateName": "Goldiva",
+        "url": "https://www.goldivaminerals.com",
+        "logo": "{{ asset('images/hero1.jpeg') }}",
+        "description": "Goldiva Minerals is a premier mineral services company in Uganda offering gold trading, smelting, documentation, and mineral consultancy services across Africa.",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Kololo",
+            "addressLocality": "Kampala",
+            "addressCountry": "UG"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+256-790-342621",
+            "contactType": "customer service",
+            "availableLanguage": ["English"]
+        },
+        "sameAs": [
+            "https://www.facebook.com/goldivaminerals",
+            "https://www.linkedin.com/company/goldivaminerals",
+            "https://www.instagram.com/goldivaminerals"
+        ],
+        "openingHours": "Mo-Fr 08:00-17:00"
+    }
+    </script>
+    
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Goldiva Minerals",
+        "image": "{{ asset('images/hero1.jpeg') }}",
+        "@id": "https://www.goldivaminerals.com",
+        "url": "https://www.goldivaminerals.com",
+        "telephone": "+256-790-342621",
+        "email": "support@goldivaminerals.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Kololo",
+            "addressLocality": "Kampala",
+            "addressRegion": "Central Region",
+            "addressCountry": "UG"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 0.3143,
+            "longitude": 32.5861
+        },
+        "priceRange": "$$",
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00",
+            "closes": "17:00"
+        }
+    }
+    </script>
+    
+    <!-- Service Schema -->
+    @yield('schema_markup')
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -68,8 +167,12 @@
                     <a href="{{ route('frontend.products') }}" class="nav-link text-gray-700 hover:text-gold-600 font-medium">Products</a>
                     <a href="{{ route('frontend.contact') }}" class="nav-link text-gray-700 hover:text-gold-600 font-medium">Contact</a>
                     <div class="relative">
-                        <input type="text" placeholder="Search..." class="w-40 pl-10 pr-4 py-2 text-sm border border-gray-200 rounded-full focus:outline-none focus:border-gold-500 focus:ring-2 focus:ring-gold-500/20 transition-all">
-                        <i class="fas fa-search absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                        <form action="{{ route('frontend.search') }}" method="GET">
+                            <input type="text" name="q" placeholder="Search..." class="w-40 pl-10 pr-4 py-2 text-sm border border-gray-200 rounded-full focus:outline-none focus:border-gold-500 focus:ring-2 focus:ring-gold-500/20 transition-all" value="{{ request('q') }}">
+                            <button type="submit" class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gold-500 transition-colors">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </form>
                     </div>
                     <a href="{{ route('frontend.consulting') }}" class="btn-gold text-white px-6 py-2.5 rounded-full font-semibold shadow-lg flex items-center space-x-2">
                         <i class="fas fa-chart-line"></i>
@@ -121,7 +224,6 @@
                 <div>
                     <h4 class="text-lg font-semibold mb-6 text-gold-400">Quick Links</h4>
                     <ul class="space-y-3">
-                        <li><a href="{{ route('frontend.home') }}" class="text-gray-400 hover:text-gold-400 transition-colors">Home</a></li>
                         <li><a href="{{ route('frontend.about') }}" class="text-gray-400 hover:text-gold-400 transition-colors">About Us</a></li>
                         <li><a href="{{ route('frontend.services') }}" class="text-gray-400 hover:text-gold-400 transition-colors">Services</a></li>
                         <li><a href="{{ route('frontend.products') }}" class="text-gray-400 hover:text-gold-400 transition-colors">Products</a></li>
@@ -144,15 +246,19 @@
                     <ul class="space-y-4">
                         <li class="flex items-start space-x-3">
                             <i class="fas fa-map-marker-alt text-gold-400 mt-1"></i>
-                            <span class="text-gray-400">Kampala, Uganda</span>
+                            <span class="text-gray-400">Kololo, Kampala, Uganda</span>
                         </li>
                         <li class="flex items-start space-x-3">
                             <i class="fas fa-envelope text-gold-400 mt-1"></i>
-                            <span class="text-gray-400">info@goldivaminerals.com</span>
+                            <span class="text-gray-400">support@goldivaminerals.com</span>
                         </li>
                         <li class="flex items-start space-x-3">
                             <i class="fas fa-phone text-gold-400 mt-1"></i>
-                            <span class="text-gray-400">+256 700 123 456</span>
+                            <span class="text-gray-400">+256 790 342621</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-globe text-gold-400 mt-1"></i>
+                            <a href="https://www.goldivaminerals.com" target="_blank" class="text-gray-400 hover:text-gold-400 transition-colors">www.goldivaminerals.com</a>
                         </li>
                     </ul>
                 </div>
@@ -163,7 +269,6 @@
                     <p class="text-gray-500 text-sm">&copy; 2024 Goldiva Minerals. All rights reserved.</p>
                     <div class="flex space-x-6 mt-4 md:mt-0">
                         <a href="#" class="text-gray-400 hover:text-gold-400 transition-colors"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-gold-400 transition-colors"><i class="fab fa-twitter"></i></a>
                         <a href="#" class="text-gray-400 hover:text-gold-400 transition-colors"><i class="fab fa-linkedin-in"></i></a>
                         <a href="#" class="text-gray-400 hover:text-gold-400 transition-colors"><i class="fab fa-instagram"></i></a>
                     </div>
@@ -173,7 +278,7 @@
         <button id="moveToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="fixed bottom-8 right-8 bg-gradient-to-br from-gold-400 to-gold-600 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300 hover:from-gold-500 hover:to-gold-700 z-50">
             <i class="fas fa-arrow-up"></i>
         </button>
-        <a href="https://wa.me/256700123456" class="fixed bottom-8 left-8 bg-green-500 text-white w-14 h-14 rounded-full shadow-lg flex items-center justify-center hover:bg-green-600 transition-all z-50">
+        <a href="https://wa.me/256790342621" class="fixed bottom-8 left-8 bg-green-500 text-white w-14 h-14 rounded-full shadow-lg flex items-center justify-center hover:bg-green-600 transition-all z-50">
             <i class="fab fa-whatsapp text-2xl"></i>
         </a>
     </footer>
